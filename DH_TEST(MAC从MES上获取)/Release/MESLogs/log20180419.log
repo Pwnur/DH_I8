@@ -1,0 +1,69 @@
+[Header]
+[Footer]
+[Header]
+[3300] INFO ****** Open Connection
+[3300] INFO ****** Start: 2018/04/19 10:39:34.261, End: 2018/04/19 10:39:34.371, Cost: 109.200
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.495, End: 2018/04/19 10:39:34.495, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Open Connection
+[3300] INFO ****** Start: 2018/04/19 10:39:34.511, End: 2018/04/19 10:39:34.542, Cost: 31.200
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.542, End: 2018/04/19 10:39:34.542, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.542, End: 2018/04/19 10:39:34.542, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.573, End: 2018/04/19 10:39:34.573, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.573, End: 2018/04/19 10:39:34.573, Cost: 0.000
+[3300] INFO 
+[3300] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='104432',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180419',reworkroutecode='' WHERE rescode='BZ02'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.589, End: 2018/04/19 10:39:34.605, Cost: 15.600
+[3300] INFO 
+[3300] INFO ****** Open Connection
+[3300] INFO ****** Start: 2018/04/19 10:39:34.605, End: 2018/04/19 10:39:34.636, Cost: 31.200
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.636, End: 2018/04/19 10:39:34.636, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[3300] INFO ****** Start: 2018/04/19 10:39:34.651, End: 2018/04/19 10:39:34.651, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4945'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.651, End: 2018/04/19 10:39:34.651, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.651, End: 2018/04/19 10:39:34.651, Cost: 0.000
+[3300] INFO 
+[3300] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='30:9C:23:53:CF:24',logindate='20180419',computerip='192.168.3.196',mdate='20180419',jigcode='',releaseuser='DLL',muser='DLL',logintime='103725',mtime='104432',releasedate='20180419',releasetime='104432',rescode='BZ02',computername='LENOVO-PC',loginuser='LILXL' WHERE serial='4945'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.651, End: 2018/04/19 10:39:34.651, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Open Connection
+[3300] INFO ****** Start: 2018/04/19 10:39:34.667, End: 2018/04/19 10:39:34.698, Cost: 31.200
+[3300] INFO 
+[3300] INFO ****** Execute SQL
+[3300] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[3300] INFO ****** Start: 2018/04/19 10:39:34.698, End: 2018/04/19 10:39:34.698, Cost: 0.000
+[3300] INFO 
+[3300] INFO ****** Close Connection
+[3300] INFO ****** Start: 2018/04/19 10:39:34.698, End: 2018/04/19 10:39:34.698, Cost: 0.000
+[3300] INFO 
+[Footer]

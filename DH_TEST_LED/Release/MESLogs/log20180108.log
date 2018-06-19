@@ -1,0 +1,88 @@
+[Header]
+[Footer]
+[Header]
+[14844] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[14844] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Text SQL:SELECT * FROM tblSimulationReport WHERE RCard='123456' ORDER BY MDate DESC,MTime DESC 
+[14844] INFO ****** Execute SQL
+[14844] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='123456' ORDER BY MDate DESC,MTime DESC 
+[14844] INFO ****** Start: 2018/01/08 11:29:50.269, End: 2018/01/08 11:29:50.331, Cost: 62.031
+[14844] INFO 
+[14844] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[14844] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Text SQL:SELECT * FROM tblSimulationReport WHERE RCard='123456' ORDER BY MDate DESC,MTime DESC 
+[14844] INFO ****** Execute SQL
+[14844] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='123456' ORDER BY MDate DESC,MTime DESC 
+[14844] INFO ****** Start: 2018/01/08 11:31:35.272, End: 2018/01/08 11:31:35.273, Cost: 1.025
+[14844] INFO 
+[14844] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[14844] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Text SQL:SELECT * FROM tblSimulationReport WHERE RCard='123456' ORDER BY MDate DESC,MTime DESC 
+[14844] INFO ****** Execute SQL
+[14844] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='123456' ORDER BY MDate DESC,MTime DESC 
+[14844] INFO ****** Start: 2018/01/08 11:33:01.602, End: 2018/01/08 11:33:01.603, Cost: 1.000
+[14844] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[9528] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[9528] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='FSADFDSFD'
+[9528] INFO ****** Execute SQL
+[9528] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='FSADFDSFD'
+[9528] INFO ****** Start: 2018/01/08 11:38:27.679, End: 2018/01/08 11:38:27.682, Cost: 3.002
+[9528] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[16116] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[16116] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDADS'
+[16116] INFO ****** Execute SQL
+[16116] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDADS'
+[16116] INFO ****** Start: 2018/01/08 13:53:28.624, End: 2018/01/08 13:53:28.628, Cost: 4.002
+[16116] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[14512] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[14512] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='DSFDSFDSFD'
+[14512] INFO ****** Execute SQL
+[14512] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='DSFDSFDSFD'
+[14512] INFO ****** Start: 2018/01/08 13:54:37.921, End: 2018/01/08 13:54:37.925, Cost: 4.003
+[14512] INFO 
+[Footer]

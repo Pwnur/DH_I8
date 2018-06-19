@@ -1,0 +1,16 @@
+[Header]
+[Footer]
+[Header]
+[17656] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[17656] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='AAAA'
+[17656] INFO ****** Execute SQL
+[17656] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='AAAA'
+[17656] INFO ****** Start: 2018/01/09 09:55:30.682, End: 2018/01/09 09:55:30.686, Cost: 4.004
+[17656] INFO 
+[Footer]

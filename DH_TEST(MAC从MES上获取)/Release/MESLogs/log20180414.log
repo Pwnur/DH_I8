@@ -1,0 +1,1005 @@
+[Header]
+[Footer]
+[Header]
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:06:51.179, End: 2018/04/14 10:06:51.334, Cost: 154.365
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:06:51.573, End: 2018/04/14 10:06:51.602, Cost: 29.584
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:06:51.609, End: 2018/04/14 10:06:51.618, Cost: 9.178
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:06:51.626, End: 2018/04/14 10:06:51.633, Cost: 6.330
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:06:51.711, End: 2018/04/14 10:06:51.718, Cost: 6.123
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:06:51.770, End: 2018/04/14 10:06:51.855, Cost: 84.529
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:06:51.855, End: 2018/04/14 10:06:51.921, Cost: 65.637
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000009' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:06:51.952, End: 2018/04/14 10:06:51.952, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:06:51.967, End: 2018/04/14 10:06:52.002, Cost: 34.947
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L000000009' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:06:52.050, End: 2018/04/14 10:06:52.052, Cost: 2.597
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L000000009' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:06:52.052, End: 2018/04/14 10:06:52.068, Cost: 15.664
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST001' AND opcode='TEST'
+[7860] INFO ****** Start: 2018/04/14 10:06:52.068, End: 2018/04/14 10:06:52.084, Cost: 15.620
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST001-TEST'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:06:52.103, End: 2018/04/14 10:06:52.103, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:06:52.118, End: 2018/04/14 10:06:52.118, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:06:52.118, End: 2018/04/14 10:06:52.134, Cost: 15.629
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000009' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:06:52.134, End: 2018/04/14 10:06:52.150, Cost: 16.378
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST001'
+[7860] INFO ****** Start: 2018/04/14 10:06:52.153, End: 2018/04/14 10:06:52.168, Cost: 15.658
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST001'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='TEST') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:06:52.184, End: 2018/04/14 10:06:52.218, Cost: 34.413
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:12:30.102, End: 2018/04/14 10:12:30.215, Cost: 112.455
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.215, End: 2018/04/14 10:12:30.227, Cost: 12.082
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.229, End: 2018/04/14 10:12:30.240, Cost: 11.029
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.243, End: 2018/04/14 10:12:30.252, Cost: 9.014
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.254, End: 2018/04/14 10:12:30.262, Cost: 8.357
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:12:30.264, End: 2018/04/14 10:12:30.274, Cost: 9.673
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:12:30.275, End: 2018/04/14 10:12:30.285, Cost: 9.352
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000009' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:12:30.287, End: 2018/04/14 10:12:30.299, Cost: 12.266
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.302, End: 2018/04/14 10:12:30.310, Cost: 8.248
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L000000009' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:12:30.311, End: 2018/04/14 10:12:30.324, Cost: 12.652
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L000000009' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:12:30.326, End: 2018/04/14 10:12:30.337, Cost: 11.346
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST001' AND opcode='TEST'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.338, End: 2018/04/14 10:12:30.347, Cost: 9.056
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST001-TEST'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:12:30.348, End: 2018/04/14 10:12:30.356, Cost: 8.097
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:12:30.357, End: 2018/04/14 10:12:30.367, Cost: 9.900
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:12:30.368, End: 2018/04/14 10:12:30.377, Cost: 9.094
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000009' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:12:30.378, End: 2018/04/14 10:12:30.389, Cost: 11.060
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST001'
+[7860] INFO ****** Start: 2018/04/14 10:12:30.398, End: 2018/04/14 10:12:30.411, Cost: 12.397
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST001'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='TEST') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:12:30.415, End: 2018/04/14 10:12:30.424, Cost: 9.067
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:12:32.886, End: 2018/04/14 10:12:32.996, Cost: 109.720
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:12:32.996, End: 2018/04/14 10:12:33.006, Cost: 10.270
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:12:33.008, End: 2018/04/14 10:12:33.019, Cost: 10.263
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:12:33.022, End: 2018/04/14 10:12:33.035, Cost: 13.663
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:12:33.036, End: 2018/04/14 10:12:33.045, Cost: 8.405
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:12:33.047, End: 2018/04/14 10:12:33.057, Cost: 10.417
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:12:33.058, End: 2018/04/14 10:12:33.067, Cost: 9.179
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000009' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:12:33.069, End: 2018/04/14 10:12:33.082, Cost: 12.611
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:12:33.085, End: 2018/04/14 10:12:33.094, Cost: 8.887
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L000000009' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:12:33.096, End: 2018/04/14 10:12:33.110, Cost: 13.900
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L000000009' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:12:33.112, End: 2018/04/14 10:12:33.123, Cost: 11.031
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST001' AND opcode='TEST'
+[7860] INFO ****** Start: 2018/04/14 10:12:33.124, End: 2018/04/14 10:12:33.132, Cost: 8.518
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST001-TEST'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:12:33.133, End: 2018/04/14 10:12:33.142, Cost: 8.663
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:12:33.143, End: 2018/04/14 10:12:33.154, Cost: 11.029
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:12:33.155, End: 2018/04/14 10:12:33.164, Cost: 8.983
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000009' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:12:33.165, End: 2018/04/14 10:12:33.176, Cost: 11.456
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST001'
+[7860] INFO ****** Start: 2018/04/14 10:12:33.180, End: 2018/04/14 10:12:33.193, Cost: 13.062
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST001'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='TEST') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:12:33.197, End: 2018/04/14 10:12:33.207, Cost: 10.048
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:12:35.092, End: 2018/04/14 10:12:35.192, Cost: 100.126
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.192, End: 2018/04/14 10:12:35.211, Cost: 18.825
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.211, End: 2018/04/14 10:12:35.211, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.211, End: 2018/04/14 10:12:35.227, Cost: 15.657
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.227, End: 2018/04/14 10:12:35.227, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:12:35.227, End: 2018/04/14 10:12:35.243, Cost: 15.627
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:12:35.243, End: 2018/04/14 10:12:35.243, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000009' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:12:35.259, End: 2018/04/14 10:12:35.261, Cost: 2.647
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.261, End: 2018/04/14 10:12:35.277, Cost: 15.659
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L000000009' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:12:35.277, End: 2018/04/14 10:12:35.293, Cost: 15.625
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L000000009' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:12:35.293, End: 2018/04/14 10:12:35.293, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST001' AND opcode='TEST'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.293, End: 2018/04/14 10:12:35.312, Cost: 18.832
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST001-TEST'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:12:35.312, End: 2018/04/14 10:12:35.312, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:12:35.312, End: 2018/04/14 10:12:35.327, Cost: 15.658
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:12:35.327, End: 2018/04/14 10:12:35.327, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000009' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:12:35.327, End: 2018/04/14 10:12:35.343, Cost: 15.626
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST001'
+[7860] INFO ****** Start: 2018/04/14 10:12:35.343, End: 2018/04/14 10:12:35.362, Cost: 19.228
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST001'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='TEST') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:12:35.363, End: 2018/04/14 10:12:35.363, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:14:44.897, End: 2018/04/14 10:14:44.997, Cost: 100.127
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:14:44.997, End: 2018/04/14 10:14:45.014, Cost: 17.234
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:14:45.016, End: 2018/04/14 10:14:45.016, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:14:45.016, End: 2018/04/14 10:14:45.031, Cost: 15.657
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:14:45.031, End: 2018/04/14 10:14:45.047, Cost: 15.599
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:14:45.047, End: 2018/04/14 10:14:45.047, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:14:45.047, End: 2018/04/14 10:14:45.066, Cost: 18.827
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000009' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:14:45.066, End: 2018/04/14 10:14:45.081, Cost: 15.629
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:14:45.081, End: 2018/04/14 10:14:45.097, Cost: 15.655
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L000000009' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:14:45.097, End: 2018/04/14 10:14:45.114, Cost: 16.889
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L000000009' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:14:45.116, End: 2018/04/14 10:14:45.127, Cost: 10.827
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST001' AND opcode='TEST'
+[7860] INFO ****** Start: 2018/04/14 10:14:45.128, End: 2018/04/14 10:14:45.136, Cost: 8.185
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST001-TEST'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:14:45.137, End: 2018/04/14 10:14:45.146, Cost: 8.957
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:14:45.147, End: 2018/04/14 10:14:45.157, Cost: 10.049
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:14:45.157, End: 2018/04/14 10:14:45.167, Cost: 9.829
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000009' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:14:45.168, End: 2018/04/14 10:14:45.179, Cost: 11.531
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST001'
+[7860] INFO ****** Start: 2018/04/14 10:14:45.183, End: 2018/04/14 10:14:45.197, Cost: 13.217
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST001'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='TEST') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:14:45.201, End: 2018/04/14 10:14:45.211, Cost: 9.908
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:14:46.602, End: 2018/04/14 10:14:46.723, Cost: 120.887
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.724, End: 2018/04/14 10:14:46.734, Cost: 10.380
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.736, End: 2018/04/14 10:14:46.748, Cost: 11.630
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.750, End: 2018/04/14 10:14:46.767, Cost: 16.699
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.768, End: 2018/04/14 10:14:46.777, Cost: 9.067
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:14:46.779, End: 2018/04/14 10:14:46.789, Cost: 10.112
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:14:46.790, End: 2018/04/14 10:14:46.800, Cost: 10.224
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000009' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:14:46.802, End: 2018/04/14 10:14:46.814, Cost: 12.137
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.818, End: 2018/04/14 10:14:46.827, Cost: 9.080
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L000000009' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:14:46.828, End: 2018/04/14 10:14:46.842, Cost: 13.936
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L000000009' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:14:46.844, End: 2018/04/14 10:14:46.856, Cost: 11.838
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST001' AND opcode='TEST'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.857, End: 2018/04/14 10:14:46.866, Cost: 8.997
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST001-TEST'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:14:46.867, End: 2018/04/14 10:14:46.876, Cost: 9.165
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L000000009' OR MEID='L000000009' ) 
+[7860] INFO ****** Start: 2018/04/14 10:14:46.877, End: 2018/04/14 10:14:46.888, Cost: 10.486
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L000000009','') scard from tblonwipcardtrans   WHERE GetSourceCard('L000000009','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:14:46.889, End: 2018/04/14 10:14:46.899, Cost: 10.120
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000009' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:14:46.900, End: 2018/04/14 10:14:46.912, Cost: 12.418
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST001'
+[7860] INFO ****** Start: 2018/04/14 10:14:46.916, End: 2018/04/14 10:14:46.929, Cost: 13.028
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST001'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='TEST') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:14:46.932, End: 2018/04/14 10:14:46.943, Cost: 10.965
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 10:32:36.745, End: 2018/04/14 10:32:36.884, Cost: 138.744
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='LILXL'
+[7860] INFO ****** Start: 2018/04/14 10:32:36.884, End: 2018/04/14 10:32:36.898, Cost: 13.982
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ZZ54'
+[7860] INFO ****** Start: 2018/04/14 10:32:36.900, End: 2018/04/14 10:32:36.912, Cost: 12.073
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 10:32:36.915, End: 2018/04/14 10:32:36.924, Cost: 9.132
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='ZZ54'
+[7860] INFO ****** Start: 2018/04/14 10:32:36.925, End: 2018/04/14 10:32:36.935, Cost: 10.131
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L0000001' OR MEID='L0000001' ) 
+[7860] INFO ****** Start: 2018/04/14 10:32:36.937, End: 2018/04/14 10:32:36.949, Cost: 11.136
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L0000001','') scard from tblonwipcardtrans   WHERE GetSourceCard('L0000001','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:32:36.950, End: 2018/04/14 10:32:36.959, Cost: 9.091
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L0000001' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 10:32:36.961, End: 2018/04/14 10:32:36.974, Cost: 13.441
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 10:32:36.978, End: 2018/04/14 10:32:36.987, Cost: 9.052
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq FROM tblts WHERE rcard = 'L0000001' and tsstatus='tsstatus_reflow' order by tsdate desc,tstime desc 
+[7860] INFO ****** Start: 2018/04/14 10:32:36.988, End: 2018/04/14 10:32:37.005, Cost: 16.993
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select upreason, downtime, modelcode, muser, downcode, downby, rescode, upby, rcard, sscode, downstatus, orgid, downdate, downshiftdate, eattribute1, downreason, uptime, mtime, mdate, upday, itemcode, mocode from tbldown where rcard='L0000001' and downstatus='status_up' order by upday desc,uptime desc
+[7860] INFO ****** Start: 2018/04/14 10:32:37.007, End: 2018/04/14 10:32:37.019, Cost: 12.208
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,mdate,itemcode,mtime,eattribute1,opcode,chooseflag,controltime FROM TBLITEMOPTIMECONTROL WHERE itemcode='LXL_TEST002' AND opcode='DY-JSTZ'
+[7860] INFO ****** Start: 2018/04/14 10:32:37.020, End: 2018/04/14 10:32:37.030, Cost: 10.050
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser, nextdayflag, mdate, outtimefrom, mtime, eattribute1, outtimeend, itemandop FROM tblitemoptimecontrol2outtime WHERE 1=1  AND itemandop = 'LXL_TEST002-DY-JSTZ'order by mdate desc,mtime desc
+[7860] INFO ****** Start: 2018/04/14 10:32:37.031, End: 2018/04/14 10:32:37.041, Cost: 9.857
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='L0000001' OR MEID='L0000001' ) 
+[7860] INFO ****** Start: 2018/04/14 10:32:37.042, End: 2018/04/14 10:32:37.054, Cost: 11.308
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetSourceCard('L0000001','') scard from tblonwipcardtrans   WHERE GetSourceCard('L0000001','')=tblonwipcardtrans.scard
+[7860] INFO ****** Start: 2018/04/14 10:32:37.055, End: 2018/04/14 10:32:37.064, Cost: 9.179
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L0000001' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 10:32:37.065, End: 2018/04/14 10:32:37.077, Cost: 11.695
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='LXL_TEST002'
+[7860] INFO ****** Start: 2018/04/14 10:32:37.080, End: 2018/04/14 10:32:37.094, Cost: 14.397
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT  templatepath, muser, templatename, mdate, itemcode, isdefault, templatedesc, mtime, templatetype, eattribute1 FROM  tblprinttemplate WHERE  1=1 AND  ITEMCODE='LXL_TEST002'  AND TEMPLATETYPE in (select TEMPLATETYPE from TBLOP2TEMPLATETYPE  where OPCODE ='DY-JSTZ') ORDER BY isdefault desc,templatename asc
+[7860] INFO ****** Start: 2018/04/14 10:32:37.098, End: 2018/04/14 10:32:37.109, Cost: 11.073
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 14:09:07.689, End: 2018/04/14 14:09:07.803, Cost: 113.906
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:07.804, End: 2018/04/14 14:09:07.819, Cost: 14.624
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 14:09:07.823, End: 2018/04/14 14:09:07.832, Cost: 9.465
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='FIXEDERRORCODE' AND paramgroupcode='DLL'
+[7860] INFO ****** Start: 2018/04/14 14:09:07.839, End: 2018/04/14 14:09:07.850, Cost: 10.953
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,ntf,mdate,ecode,mtime,eattribute1,ecdesc,isntf FROM TBLEC WHERE ecode='HDLL'
+[7860] INFO ****** Start: 2018/04/14 14:09:07.858, End: 2018/04/14 14:09:07.884, Cost: 25.992
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:07.888, End: 2018/04/14 14:09:07.899, Cost: 10.844
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000018' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:07.932, End: 2018/04/14 14:09:07.945, Cost: 12.509
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetTSN('L000000018','') scard from dual 
+[7860] INFO ****** Start: 2018/04/14 14:09:07.949, End: 2018/04/14 14:09:08.055, Cost: 106.091
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000018' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:08.057, End: 2018/04/14 14:09:08.067, Cost: 10.525
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT   serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1  FROM  Tblmo2imei  WHERE  1=1   AND   Tsn='L000000018'   ORDER  BY  MDATE DESC,MTIME DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:08.074, End: 2018/04/14 14:09:08.085, Cost: 11.018
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000018' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 14:09:08.086, End: 2018/04/14 14:09:08.097, Cost: 10.999
+[7860] INFO 
+[7860] INFO ****** Close Connection
+[7860] INFO ****** Start: 2018/04/14 14:09:08.103, End: 2018/04/14 14:09:08.104, Cost: 1.003
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 14:09:19.723, End: 2018/04/14 14:09:19.723, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:19.723, End: 2018/04/14 14:09:19.732, Cost: 8.852
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 14:09:19.733, End: 2018/04/14 14:09:19.740, Cost: 7.214
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='FIXEDERRORCODE' AND paramgroupcode='DLL'
+[7860] INFO ****** Start: 2018/04/14 14:09:19.740, End: 2018/04/14 14:09:19.761, Cost: 21.010
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,ntf,mdate,ecode,mtime,eattribute1,ecdesc,isntf FROM TBLEC WHERE ecode='HDLL'
+[7860] INFO ****** Start: 2018/04/14 14:09:19.762, End: 2018/04/14 14:09:19.769, Cost: 7.166
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:19.771, End: 2018/04/14 14:09:19.782, Cost: 11.137
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000011' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:19.787, End: 2018/04/14 14:09:19.798, Cost: 11.114
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000011' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 14:09:19.801, End: 2018/04/14 14:09:19.813, Cost: 12.039
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select b.* from tblmodel2ecg a ,tblecg2ec b  where  1=1 and   a.modelcode='TEST_I8'  AND a.ECGCODE=b.ECGCODE  AND b.ecode='HDLL' 
+[7860] INFO ****** Start: 2018/04/14 14:09:19.828, End: 2018/04/14 14:09:19.873, Cost: 44.297
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:19.875, End: 2018/04/14 14:09:19.883, Cost: 8.054
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select opseq, muser, mdate, opcontrol, opid, itemcode, idmergerule, mtime, idmergetype, routecode, opcode, eattribute1, orgid, optionalop from tblitemroute2op where itemcode='LXL_TEST001' and routecode='LXL02' and opcode ='TEST' AND orgid IN (1) 
+[7860] INFO ****** Start: 2018/04/14 14:09:19.918, End: 2018/04/14 14:09:19.929, Cost: 11.258
+[7860] INFO 
+[7860] INFO ****** Begin Transaction
+[7860] INFO ****** Start: 2018/04/14 14:09:19.935, End: 2018/04/14 14:09:19.938, Cost: 3.041
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000011' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 14:09:19.938, End: 2018/04/14 14:09:19.950, Cost: 12.121
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L000000011' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 14:09:19.953, End: 2018/04/14 14:09:19.965, Cost: 11.252
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='UNDONG' AND paramgroupcode='APPSETTINGS'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.039, End: 2018/04/14 14:09:20.048, Cost: 8.429
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select * from tbldown where rcard='L000000011' and orgid=1
+[7860] INFO ****** Start: 2018/04/14 14:09:20.053, End: 2018/04/14 14:09:20.061, Cost: 8.569
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select resseq, opcode, muser, rescode, mtime, eattribute1, mdate from TBLop2RES where RESCODE ='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.063, End: 2018/04/14 14:09:20.071, Cost: 7.094
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.092, End: 2018/04/14 14:09:20.101, Cost: 9.026
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT lotno, reworkcode, muser, rescode, itemcode, mtime, mdate FROM tblres2reworksheet WHERE rescode = 'BZ02' AND itemcode = 'LXL_TEST001' AND lotno IS NULL 
+[7860] INFO ****** Start: 2018/04/14 14:09:20.124, End: 2018/04/14 14:09:20.133, Cost: 8.977
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.167, End: 2018/04/14 14:09:20.180, Cost: 12.933
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1, tpcode, transstatus, tsmemo, muser, rmabillcode, frmroutecode, itemcode, tsrepairuser, tsrescode, confirmuser, frmweek, mtime, confirmdate, rcardseq, refrescode, tsid, scardseq, frmuser, shiftday, shifttypecode, tcardseq, modelcode, tcard, tstimes, crescode, refroutecode, refopcode, frmdate, confirmtime, frmrescode, shiftcode, copcode, tstype, frmopcode, mocode, tstime, mdate, cardtype, tsrepairmtime, refmocode, rrcard, frminputtype, frmsscode, frmsegcode, frmmemo, tsuser, frmoutroutecode, tffullpath, frmtime, frmmonth, tsdate, rcard, scard, tsstatus, scrapcause, tsrepairmdate, moseq     FROM tblts     WHERE rcard = 'L000000011'     AND mocode = 'LXL_T001'     ORDER BY mdate * 1000000 + mtime DESC , RCARDSEQ DESC  
+[7860] INFO ****** Start: 2018/04/14 14:09:20.198, End: 2018/04/14 14:09:20.208, Cost: 10.073
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT resseq,opcode,muser,rescode,mtime,eattribute1,mdate FROM TBLOP2RES WHERE opcode='XHZH' AND rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.212, End: 2018/04/14 14:09:20.219, Cost: 6.979
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.221, End: 2018/04/14 14:09:20.231, Cost: 10.226
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select opseq, muser, mdate, opcontrol, opid, itemcode, idmergerule, mtime, idmergetype, routecode, opcode, eattribute1, orgid, optionalop from tblitemroute2op where itemcode = 'LXL_TEST001' and routecode = 'LXL02'  AND orgid IN (1)  and  opseq > (select opseq from tblitemroute2op where itemcode = 'LXL_TEST001' and routecode = 'LXL02' and opcode='XHZH'  AND orgid IN (1) )  order by opseq
+[7860] INFO ****** Start: 2018/04/14 14:09:20.233, End: 2018/04/14 14:09:20.242, Cost: 8.938
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT resseq,opcode,muser,rescode,mtime,eattribute1,mdate FROM TBLOP2RES WHERE opcode='TEST' AND rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.242, End: 2018/04/14 14:09:20.251, Cost: 8.177
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select opseq, muser, mdate, opcontrol, opid, itemcode, idmergerule, mtime, idmergetype, routecode, opcode, eattribute1, orgid, optionalop from tblitemroute2op where itemcode='LXL_TEST001' and routecode='LXL02' and opcode ='TEST' AND orgid IN (1) 
+[7860] INFO ****** Start: 2018/04/14 14:09:20.266, End: 2018/04/14 14:09:20.275, Cost: 8.728
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='UNDONG' AND paramgroupcode='APPSETTINGS'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.284, End: 2018/04/14 14:09:20.292, Cost: 8.242
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.292, End: 2018/04/14 14:09:20.303, Cost: 10.794
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.330, End: 2018/04/14 14:09:20.337, Cost: 6.796
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select muser, tpdesc, mdate, tptype, shifttypecode, tpseq, mtime, tpcode, eattribute1, tpbtime, isoverdate, shiftcode, tpetime from tbltp where shifttypecode='DAY' and (    (tpbtime < tpetime and '140920' between tpbtime and tpetime )or (tpbtime > tpetime and '140920' < tpbtime and '140920' + 240000 between tpbtime and tpetime + 240000) or (tpbtime > tpetime and '140920' >= tpbtime and '140920'          between tpbtime and tpetime + 240000) )
+[7860] INFO ****** Start: 2018/04/14 14:09:20.341, End: 2018/04/14 14:09:20.350, Cost: 8.723
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLSIMULATION SET fromop='',iscom='0',fromroute='',palletcode='',modelcode='TEST_I8',tcard='L000000011',lotno='',laction='NG',cartoncode='',actionlist=';NG;',productstatus='NG',rescode='BZ02',moseq='111',tcardseq='2',mdate='20180414',itemcode='LXL_TEST001',mtime='140920',rcardseq='4',idmergerule='1',rmabillcode='',scardseq='1',shelfno='',eattribute2='',eattribute1='',ishold='0',ngtimes='1',routecode='LXL02',muser='LILXL',opcode='TEST',scard='L000000011' WHERE rcard='L000000011' AND mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.360, End: 2018/04/14 14:09:20.384, Cost: 24.320
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLSIMULATIONREPORT SET eattribute1='',tpcode='B',muser='LILXL',status='NG',rmabillcode='',laction='NG',sscode='PACK01',rcardseq='4',modelcode='TEST_I8',scardseq='1',idmergerule='1',iscom='0',shelfno='',shiftday='20180414',shifttypecode='DAY',ngtimes='1',tcard='L000000011',isloadedpart='',mtime='140920',shiftcode='1',cartoncode='',itemcode='LXL_TEST001',loadedrcard='',mdate='20180414',rescode='BZ02',moseq='111',routecode='LXL02',palletcode='',opcode='TEST',tcardseq='2',segcode='AP',scard='L000000011',lotno='',eattribute2='' WHERE rcard='L000000011' AND mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.386, End: 2018/04/14 14:09:20.443, Cost: 57.230
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT COUNT(*) FROM tblonwip WHERE 1=1  AND rcard='L000000011' AND mocode='LXL_T001' AND SSCode='PACK01' AND opCode='TEST'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.451, End: 2018/04/14 14:09:20.459, Cost: 7.931
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='TEST' AND paramgroupcode='SMT_MATERIAL'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.460, End: 2018/04/14 14:09:20.469, Cost: 8.353
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='TEST' AND paramgroupcode='SMTBINDOP'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.470, End: 2018/04/14 14:09:20.479, Cost: 8.776
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.487, End: 2018/04/14 14:09:20.494, Cost: 6.935
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.496, End: 2018/04/14 14:09:20.506, Cost: 10.584
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT COUNT(*) FROM tblsysparam, tblres WHERE tblsysparam.paramcode = tblres.sscode AND tblsysparam.paramgroupcode = 'PERFORMANCECOLLECTLINE' AND tblres.rescode = 'BZ02' 
+[7860] INFO ****** Start: 2018/04/14 14:09:20.513, End: 2018/04/14 14:09:20.522, Cost: 9.207
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : INSERT INTO TBLONWIP(actionresult,segcode,modelcode,tcard,shiftcode,sscode,dllpass,routecode,rescode,moseq,tcardseq,rcard,mdate,itemcode,mtime,rcardseq,tpcode,scardseq,shelfno,shifttypecode,eattribute1,action,shiftday,ngtimes,mocode,jigcode,rmabillcode,muser,opcode,scard) VALUES ('NG','AP','TEST_I8','L000000011','1','PACK01','1','LXL02','BZ02','111','2','L000000011','20180414','LXL_TEST001','140921','4','B','1','','DAY','','NG','20180414','1','LXL_T001','','','LILXL','TEST','L000000011')
+[7860] INFO ****** Start: 2018/04/14 14:09:20.530, End: 2018/04/14 14:09:20.541, Cost: 10.803
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select paramcode, muser, mdate, isactive, paramdesc, issys, mtime, paramgroupcode, paramalias, paramvalue, eattribute1, parentparam from TBLSYSPARAM where PARAMGROUPCODE='AUTODROPERRORCODE'   order by EATTRIBUTE1,paramcode 
+[7860] INFO ****** Start: 2018/04/14 14:09:20.549, End: 2018/04/14 14:09:20.558, Cost: 8.855
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select TO_CHAR (TO_DATE ('20180414', 'yyyyMMdd'), 'ww') as Week from dual
+[7860] INFO ****** Start: 2018/04/14 14:09:20.569, End: 2018/04/14 14:09:20.576, Cost: 7.383
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : INSERT INTO TBLTS(eattribute1,tpcode,transstatus,tsmemo,muser,rmabillcode,frmroutecode,itemcode,tsrepairuser,tsrescode,confirmuser,frmweek,mtime,confirmdate,rcardseq,refrescode,tsid,scardseq,frmuser,shiftday,shifttypecode,tcardseq,modelcode,tcard,tstimes,crescode,refroutecode,refopcode,frmdate,confirmtime,frmrescode,shiftcode,copcode,tstype,frmopcode,mocode,tstime,mdate,cardtype,tsrepairmtime,refmocode,rrcard,frminputtype,frmsscode,frmsegcode,frmmemo,tsuser,frmoutroutecode,tffullpath,frmtime,frmmonth,tsdate,rcard,scard,tsstatus,scrapcause,tsrepairmdate,moseq) VALUES ('','B','none','','LILXL','','LXL02','LXL_TEST001','','','','15','140920','0','4','','L000000011448a1b66f-315f-41fd-b5fc-fd8c0','1','LILXL','20180414','DAY','2','TEST_I8','L000000011','1','','','','20180414','0','BZ02','1','','','TEST','LXL_T001','0','20180414','cardtype_product','0','','','tssource_onwip','PACK01','AP','L001','','LXL02','','140920','4','0','L000000011','L000000011','tsstatus_new','','0','111')
+[7860] INFO ****** Start: 2018/04/14 14:09:20.578, End: 2018/04/14 14:09:20.589, Cost: 11.039
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : INSERT INTO TBLTSERRORCODE(ecgcode,muser,mdate,mocode,ecode,itemcode,modelcode,tsid,mtime,rcard,rcardseq,moseq,eattribute1) VALUES ('H','LILXL','20180414','LXL_T001','HDLL','LXL_TEST001','TEST_I8','L000000011448a1b66f-315f-41fd-b5fc-fd8c0','140920','L000000011','4','111','')
+[7860] INFO ****** Start: 2018/04/14 14:09:20.590, End: 2018/04/14 14:09:20.601, Cost: 10.288
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,shiftcode,ngtimes,eattribute3,eattribute1,rescode,eccode,tpbtime,sscode,tpetime,tpcode,eattribute2,opcode,ecgcode,shiftday,modelcode,itemcode,mocode,day,week,month FROM TBLRPTRESECG WHERE segcode='AP' AND shiftcode='1' AND rescode='BZ02' AND eccode='HDLL' AND sscode='PACK01' AND tpcode='B' AND opcode='TEST' AND ecgcode='H' AND shiftday='20180414' AND modelcode='TEST_I8' AND itemcode='LXL_TEST001' AND mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.640, End: 2018/04/14 14:09:20.650, Cost: 9.528
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,tpdesc,mdate,tptype,shifttypecode,tpseq,mtime,tpcode,eattribute1,tpbtime,isoverdate,shiftcode,tpetime FROM TBLTP WHERE tpcode='B'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.652, End: 2018/04/14 14:09:20.661, Cost: 8.538
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,tpdesc,mdate,tptype,shifttypecode,tpseq,mtime,tpcode,eattribute1,tpbtime,isoverdate,shiftcode,tpetime FROM TBLTP WHERE tpcode='B'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.663, End: 2018/04/14 14:09:20.671, Cost: 8.375
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select TO_CHAR (TO_DATE ('20180414', 'yyyyMMdd'), 'ww') as Week from dual
+[7860] INFO ****** Start: 2018/04/14 14:09:20.672, End: 2018/04/14 14:09:20.679, Cost: 7.010
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,shiftcode,ngtimes,eattribute3,eattribute1,rescode,eccode,tpbtime,sscode,tpetime,tpcode,eattribute2,opcode,ecgcode,shiftday,modelcode,itemcode,mocode,day,week,month FROM TBLRPTRESECG WHERE segcode='AP' AND shiftcode='1' AND rescode='BZ02' AND eccode='HDLL' AND sscode='PACK01' AND tpcode='B' AND opcode='TEST' AND ecgcode='H' AND shiftday='20180414' AND modelcode='TEST_I8' AND itemcode='LXL_TEST001' AND mocode='LXL_T001'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.694, End: 2018/04/14 14:09:20.703, Cost: 9.383
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.703, End: 2018/04/14 14:09:20.711, Cost: 8.015
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : INSERT INTO TBLRPTRESECG(segcode,shiftcode,ngtimes,eattribute3,eattribute1,rescode,eccode,tpbtime,sscode,tpetime,tpcode,eattribute2,opcode,ecgcode,shiftday,modelcode,itemcode,mocode,day,week,month) VALUES ('AP','1','1','0','0','BZ02','HDLL','100001','PACK01','153000','B','0','TEST','H','20180414','TEST_I8','LXL_TEST001','LXL_T001','20180414','15','4')
+[7860] INFO ****** Start: 2018/04/14 14:09:20.713, End: 2018/04/14 14:09:20.724, Cost: 10.500
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT toopcode,muser,mdate,ecode,mtime,eattribute1,routecode,opcode,orgid FROM TBLEC2OPREWORK WHERE ecode='HDLL' AND opcode='TEST' AND orgid='1'
+[7860] INFO ****** Start: 2018/04/14 14:09:20.733, End: 2018/04/14 14:09:20.743, Cost: 9.671
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode, status, shifttypecode, shiftcode, muser, lotno, rescode, moseq, rcard, mocode, sscode, collecttype, mtime, rcardseq, tpcode, opcode, eattribute1, mdate, modelcode, itemcode, routecode, lotseq FROM tbllot2card WHERE rcard = 'L000000011' 
+[7860] INFO ****** Start: 2018/04/14 14:09:20.771, End: 2018/04/14 14:09:20.780, Cost: 9.570
+[7860] INFO 
+[7860] INFO ****** Commit Transaction
+[7860] INFO ****** Start: 2018/04/14 14:09:20.781, End: 2018/04/14 14:09:20.789, Cost: 7.534
+[7860] INFO 
+[7860] INFO ****** Close Connection
+[7860] INFO ****** Start: 2018/04/14 14:09:20.789, End: 2018/04/14 14:09:20.789, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 14:09:53.916, End: 2018/04/14 14:09:53.916, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:53.916, End: 2018/04/14 14:09:53.925, Cost: 8.999
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[7860] INFO ****** Start: 2018/04/14 14:09:53.926, End: 2018/04/14 14:09:53.932, Cost: 6.445
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='FIXEDERRORCODE' AND paramgroupcode='DLL'
+[7860] INFO ****** Start: 2018/04/14 14:09:53.933, End: 2018/04/14 14:09:53.941, Cost: 7.476
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT muser,ntf,mdate,ecode,mtime,eattribute1,ecdesc,isntf FROM TBLEC WHERE ecode='HDLL'
+[7860] INFO ****** Start: 2018/04/14 14:09:53.941, End: 2018/04/14 14:09:53.948, Cost: 7.358
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 14:09:53.949, End: 2018/04/14 14:09:53.959, Cost: 9.952
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='750079L00410041' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:53.960, End: 2018/04/14 14:09:53.971, Cost: 11.311
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  select  distinct GetTSN('750079L00410041','') scard from dual 
+[7860] INFO ****** Start: 2018/04/14 14:09:53.971, End: 2018/04/14 14:09:53.982, Cost: 10.134
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='750079L00410041' ORDER BY MDate DESC,MTime DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:53.983, End: 2018/04/14 14:09:53.992, Cost: 9.649
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text :  SELECT   serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1  FROM  Tblmo2imei  WHERE  1=1   AND   Tsn='750079L00410041'   ORDER  BY  MDATE DESC,MTIME DESC 
+[7860] INFO ****** Start: 2018/04/14 14:09:53.992, End: 2018/04/14 14:09:54.003, Cost: 10.655
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = '750079L00410041' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[7860] INFO ****** Start: 2018/04/14 14:09:54.003, End: 2018/04/14 14:09:54.014, Cost: 10.775
+[7860] INFO 
+[7860] INFO ****** Close Connection
+[7860] INFO ****** Start: 2018/04/14 14:09:54.015, End: 2018/04/14 14:09:54.015, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 16:54:17.740, End: 2018/04/14 16:54:17.887, Cost: 146.651
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 16:54:17.887, End: 2018/04/14 16:54:17.902, Cost: 15.127
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 16:54:17.910, End: 2018/04/14 16:54:18.029, Cost: 118.957
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.029, End: 2018/04/14 16:54:18.039, Cost: 10.730
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.045, End: 2018/04/14 16:54:18.057, Cost: 11.188
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.069, End: 2018/04/14 16:54:18.080, Cost: 11.097
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.082, End: 2018/04/14 16:54:18.090, Cost: 8.002
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='165418',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180414',reworkroutecode='' WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.096, End: 2018/04/14 16:54:18.106, Cost: 10.132
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 16:54:18.109, End: 2018/04/14 16:54:18.225, Cost: 115.997
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.225, End: 2018/04/14 16:54:18.241, Cost: 15.831
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[7860] INFO ****** Start: 2018/04/14 16:54:18.244, End: 2018/04/14 16:54:18.255, Cost: 11.036
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4859'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.269, End: 2018/04/14 16:54:18.277, Cost: 8.562
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.278, End: 2018/04/14 16:54:18.286, Cost: 8.006
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180414',computerip='192.168.3.100',mdate='20180414',jigcode='',releaseuser='DLL',muser='DLL',logintime='165049',mtime='165418',releasedate='20180414',releasetime='165418',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4859'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.288, End: 2018/04/14 16:54:18.297, Cost: 8.473
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 16:54:18.322, End: 2018/04/14 16:54:18.322, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 16:54:18.322, End: 2018/04/14 16:54:18.339, Cost: 17.248
+[7860] INFO 
+[7860] INFO ****** Close Connection
+[7860] INFO ****** Start: 2018/04/14 16:54:18.339, End: 2018/04/14 16:54:18.339, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 17:59:21.345, End: 2018/04/14 17:59:21.463, Cost: 117.820
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.464, End: 2018/04/14 17:59:21.477, Cost: 13.447
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 17:59:21.482, End: 2018/04/14 17:59:21.581, Cost: 99.156
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.582, End: 2018/04/14 17:59:21.591, Cost: 9.115
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.593, End: 2018/04/14 17:59:21.602, Cost: 8.552
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.607, End: 2018/04/14 17:59:21.616, Cost: 9.424
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.618, End: 2018/04/14 17:59:21.625, Cost: 7.068
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='175922',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180414',reworkroutecode='' WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.629, End: 2018/04/14 17:59:21.639, Cost: 9.367
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 17:59:21.642, End: 2018/04/14 17:59:21.744, Cost: 102.221
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.745, End: 2018/04/14 17:59:21.753, Cost: 7.653
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[7860] INFO ****** Start: 2018/04/14 17:59:21.754, End: 2018/04/14 17:59:21.763, Cost: 9.144
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4871'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.766, End: 2018/04/14 17:59:21.775, Cost: 9.083
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.777, End: 2018/04/14 17:59:21.784, Cost: 7.093
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180414',computerip='192.168.3.100',mdate='20180414',jigcode='',releaseuser='DLL',muser='DLL',logintime='174925',mtime='175922',releasedate='20180414',releasetime='175922',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4871'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.787, End: 2018/04/14 17:59:21.795, Cost: 8.134
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 17:59:21.798, End: 2018/04/14 17:59:21.940, Cost: 141.818
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 17:59:21.941, End: 2018/04/14 17:59:21.952, Cost: 10.917
+[7860] INFO 
+[7860] INFO ****** Close Connection
+[7860] INFO ****** Start: 2018/04/14 17:59:21.953, End: 2018/04/14 17:59:21.953, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 18:00:44.865, End: 2018/04/14 18:00:44.865, Cost: 0.000
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 18:00:44.865, End: 2018/04/14 18:00:44.874, Cost: 9.221
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 18:00:44.875, End: 2018/04/14 18:00:44.996, Cost: 120.256
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 18:00:44.997, End: 2018/04/14 18:00:45.008, Cost: 11.134
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.010, End: 2018/04/14 18:00:45.022, Cost: 12.001
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.026, End: 2018/04/14 18:00:45.039, Cost: 13.134
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.041, End: 2018/04/14 18:00:45.058, Cost: 16.974
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='180045',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180414',reworkroutecode='' WHERE rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.062, End: 2018/04/14 18:00:45.073, Cost: 11.061
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 18:00:45.076, End: 2018/04/14 18:00:45.181, Cost: 104.897
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.182, End: 2018/04/14 18:00:45.189, Cost: 6.989
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[7860] INFO ****** Start: 2018/04/14 18:00:45.190, End: 2018/04/14 18:00:45.201, Cost: 11.066
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4872'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.207, End: 2018/04/14 18:00:45.218, Cost: 11.067
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.221, End: 2018/04/14 18:00:45.230, Cost: 8.995
+[7860] INFO 
+[7860] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180414',computerip='192.168.3.100',mdate='20180414',jigcode='',releaseuser='DLL',muser='DLL',logintime='175945',mtime='180045',releasedate='20180414',releasetime='180045',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4872'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.233, End: 2018/04/14 18:00:45.245, Cost: 11.858
+[7860] INFO 
+[7860] INFO ****** Open Connection
+[7860] INFO ****** Start: 2018/04/14 18:00:45.246, End: 2018/04/14 18:00:45.339, Cost: 93.480
+[7860] INFO 
+[7860] INFO ****** Execute SQL
+[7860] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[7860] INFO ****** Start: 2018/04/14 18:00:45.339, End: 2018/04/14 18:00:45.348, Cost: 8.869
+[7860] INFO 
+[7860] INFO ****** Close Connection
+[7860] INFO ****** Start: 2018/04/14 18:00:45.349, End: 2018/04/14 18:00:45.349, Cost: 0.000
+[7860] INFO 

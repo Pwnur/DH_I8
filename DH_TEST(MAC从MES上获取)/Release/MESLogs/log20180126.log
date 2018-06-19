@@ -1,0 +1,226 @@
+[Header]
+[Footer]
+[Header]
+[15388] ERROROpen Connection Failure	未在本地计算机上注册“OraOLEDB.Oracle.1”提供程序。	System.Data	   在 System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void GetDataSource(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.DataSourceWrapper ByRef)
+[15388] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='SADSADA'
+[15388] INFO ****** Execute SQL
+[15388] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='SADSADA'
+[15388] INFO ****** Start: 2018/01/26 10:13:21.433, End: 2018/01/26 10:13:21.436, Cost: 3.907
+[15388] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[9048] ERROROpen Connection Failure	未在本地计算机上注册“OraOLEDB.Oracle.1”提供程序。	System.Data	   在 System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void GetDataSource(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.DataSourceWrapper ByRef)
+[9048] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ADSADSAS'
+[9048] INFO ****** Execute SQL
+[9048] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ADSADSAS'
+[9048] INFO ****** Start: 2018/01/26 10:53:24.302, End: 2018/01/26 10:53:24.302, Cost: 0.000
+[9048] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[15012] ERROROpen Connection Failure	未在本地计算机上注册“OraOLEDB.Oracle.1”提供程序。	System.Data	   在 System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void GetDataSource(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.DataSourceWrapper ByRef)
+[15012] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSADSA'
+[15012] INFO ****** Execute SQL
+[15012] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSADSA'
+[15012] INFO ****** Start: 2018/01/26 10:55:22.756, End: 2018/01/26 10:55:22.756, Cost: 0.000
+[15012] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[11108] ERROROpen Connection Failure	未在本地计算机上注册“OraOLEDB.Oracle.1”提供程序。	System.Data	   在 System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void GetDataSource(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.DataSourceWrapper ByRef)
+[11108] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='DSADSA'
+[11108] INFO ****** Execute SQL
+[11108] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='DSADSA'
+[11108] INFO ****** Start: 2018/01/26 10:57:40.111, End: 2018/01/26 10:57:40.111, Cost: 0.000
+[11108] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[6524] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[6524] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ADSADSA'
+[6524] INFO ****** Execute SQL
+[6524] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ADSADSA'
+[6524] INFO ****** Start: 2018/01/26 11:13:16.588, End: 2018/01/26 11:13:16.588, Cost: 0.000
+[6524] INFO 
+[6524] ERROROpen Connection Failure	ORA-12154: TNS: 无法解析指定的连接标识符	OraOLEDB	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[6524] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Text SQL:SELECT * FROM tblSimulationReport WHERE RCard='ADSADSA' ORDER BY MDate DESC,MTime DESC 
+[6524] INFO ****** Execute SQL
+[6524] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='ADSADSA' ORDER BY MDate DESC,MTime DESC 
+[6524] INFO ****** Start: 2018/01/26 11:16:44.194, End: 2018/01/26 11:16:44.194, Cost: 0.000
+[6524] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[12484] INFO ****** Open Connection
+[12484] INFO ****** Start: 2018/01/26 11:17:08.070, End: 2018/01/26 11:17:08.367, Cost: 296.862
+[12484] INFO 
+[12484] INFO ****** Execute SQL
+[12484] INFO ****** Text :  select  distinct GetTSN('FDSFDSFDS','') scard from dual 
+[12484] INFO ****** Start: 2018/01/26 11:17:08.524, End: 2018/01/26 11:17:08.789, Cost: 265.645
+[12484] INFO 
+[12484] INFO ****** Execute SQL
+[12484] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'FDSFDSFDS' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[12484] INFO ****** Start: 2018/01/26 11:17:08.899, End: 2018/01/26 11:17:08.914, Cost: 15.639
+[12484] INFO 
+[12484] INFO ****** Close Connection
+[12484] INFO ****** Start: 2018/01/26 11:17:08.914, End: 2018/01/26 11:17:08.914, Cost: 0.000
+[12484] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:23:23.272, End: 2018/01/26 11:23:23.678, Cost: 406.270
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text :  select  distinct GetTSN('ASDSADS','') scard from dual 
+[14952] INFO ****** Start: 2018/01/26 11:23:23.818, End: 2018/01/26 11:23:23.834, Cost: 15.624
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'ASDSADS' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[14952] INFO ****** Start: 2018/01/26 11:23:23.850, End: 2018/01/26 11:23:23.865, Cost: 15.625
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:23:23.865, End: 2018/01/26 11:23:23.865, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:03.418, End: 2018/01/26 11:24:03.418, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:03.418, End: 2018/01/26 11:24:03.434, Cost: 15.625
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:03.434, End: 2018/01/26 11:24:03.434, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:05.168, End: 2018/01/26 11:24:05.168, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:05.168, End: 2018/01/26 11:24:05.184, Cost: 15.625
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:05.184, End: 2018/01/26 11:24:05.184, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:05.684, End: 2018/01/26 11:24:05.684, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:05.684, End: 2018/01/26 11:24:05.699, Cost: 15.637
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:05.699, End: 2018/01/26 11:24:05.699, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:05.871, End: 2018/01/26 11:24:05.871, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:05.871, End: 2018/01/26 11:24:05.902, Cost: 31.233
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:05.902, End: 2018/01/26 11:24:05.902, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.059, End: 2018/01/26 11:24:06.059, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:06.059, End: 2018/01/26 11:24:06.074, Cost: 15.620
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.074, End: 2018/01/26 11:24:06.074, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.231, End: 2018/01/26 11:24:06.231, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:06.231, End: 2018/01/26 11:24:06.262, Cost: 31.255
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.262, End: 2018/01/26 11:24:06.262, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.402, End: 2018/01/26 11:24:06.402, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:06.402, End: 2018/01/26 11:24:06.402, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.402, End: 2018/01/26 11:24:06.402, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.543, End: 2018/01/26 11:24:06.543, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='ASDSA'
+[14952] INFO ****** Start: 2018/01/26 11:24:06.559, End: 2018/01/26 11:24:06.559, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:24:06.559, End: 2018/01/26 11:24:06.559, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Open Connection
+[14952] INFO ****** Start: 2018/01/26 11:47:57.510, End: 2018/01/26 11:47:57.620, Cost: 109.375
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text :  select  distinct GetTSN('123456','') scard from dual 
+[14952] INFO ****** Start: 2018/01/26 11:47:57.620, End: 2018/01/26 11:47:57.620, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Execute SQL
+[14952] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = '123456' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[14952] INFO ****** Start: 2018/01/26 11:47:57.635, End: 2018/01/26 11:47:57.635, Cost: 0.000
+[14952] INFO 
+[14952] INFO ****** Close Connection
+[14952] INFO ****** Start: 2018/01/26 11:47:57.635, End: 2018/01/26 11:47:57.635, Cost: 0.000
+[14952] INFO 
+[Footer]

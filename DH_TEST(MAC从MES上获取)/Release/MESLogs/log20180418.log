@@ -1,0 +1,655 @@
+[Header]
+[Footer]
+[Header]
+[4784] INFO ****** Open Connection
+[4784] INFO ****** Start: 2018/04/18 14:16:43.342, End: 2018/04/18 14:16:43.451, Cost: 109.200
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.654, End: 2018/04/18 14:16:43.669, Cost: 15.600
+[4784] INFO 
+[4784] INFO ****** Open Connection
+[4784] INFO ****** Start: 2018/04/18 14:16:43.669, End: 2018/04/18 14:16:43.700, Cost: 31.200
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.700, End: 2018/04/18 14:16:43.700, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.700, End: 2018/04/18 14:16:43.700, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.716, End: 2018/04/18 14:16:43.716, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.716, End: 2018/04/18 14:16:43.716, Cost: 0.000
+[4784] INFO 
+[4784] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='142142',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180418',reworkroutecode='' WHERE rescode='BZ02'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.732, End: 2018/04/18 14:16:43.732, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Open Connection
+[4784] INFO ****** Start: 2018/04/18 14:16:43.732, End: 2018/04/18 14:16:43.778, Cost: 46.800
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.778, End: 2018/04/18 14:16:43.778, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[4784] INFO ****** Start: 2018/04/18 14:16:43.794, End: 2018/04/18 14:16:43.794, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4924'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.810, End: 2018/04/18 14:16:43.810, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.810, End: 2018/04/18 14:16:43.810, Cost: 0.000
+[4784] INFO 
+[4784] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='30:9C:23:53:BD:38',logindate='20180418',computerip='192.168.1.135',mdate='20180418',jigcode='',releaseuser='DLL',muser='DLL',logintime='134638',mtime='142142',releasedate='20180418',releasetime='142142',rescode='BZ02',computername='LENOVO-PC',loginuser='LILXL' WHERE serial='4924'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.810, End: 2018/04/18 14:16:43.810, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Open Connection
+[4784] INFO ****** Start: 2018/04/18 14:16:43.810, End: 2018/04/18 14:16:43.841, Cost: 31.200
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[4784] INFO ****** Start: 2018/04/18 14:16:43.841, End: 2018/04/18 14:16:43.841, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Close Connection
+[4784] INFO ****** Start: 2018/04/18 14:16:43.841, End: 2018/04/18 14:16:43.841, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Open Connection
+[4784] INFO ****** Start: 2018/04/18 14:16:51.313, End: 2018/04/18 14:16:51.313, Cost: 0.000
+[4784] INFO 
+[4784] INFO ****** Execute SQL
+[4784] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ0'
+[4784] INFO ****** Start: 2018/04/18 14:16:51.313, End: 2018/04/18 14:16:51.329, Cost: 15.600
+[4784] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[456] INFO ****** Open Connection
+[456] INFO ****** Start: 2018/04/18 14:44:33.194, End: 2018/04/18 14:44:35.705, Cost: 2511.600
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[456] INFO ****** Start: 2018/04/18 14:44:36.439, End: 2018/04/18 14:44:36.548, Cost: 109.200
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[456] INFO ****** Start: 2018/04/18 14:44:36.579, End: 2018/04/18 14:44:36.579, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[456] INFO ****** Start: 2018/04/18 14:44:36.610, End: 2018/04/18 14:44:36.610, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[456] INFO ****** Start: 2018/04/18 14:44:36.610, End: 2018/04/18 14:44:36.626, Cost: 15.600
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[456] INFO ****** Start: 2018/04/18 14:44:36.626, End: 2018/04/18 14:44:36.626, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[456] INFO ****** Start: 2018/04/18 14:44:36.626, End: 2018/04/18 14:44:36.626, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[456] INFO ****** Start: 2018/04/18 14:44:36.626, End: 2018/04/18 14:44:36.626, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[456] INFO ****** Start: 2018/04/18 14:44:36.641, End: 2018/04/18 14:44:36.641, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Open Connection
+[456] INFO ****** Start: 2018/04/18 14:44:36.985, End: 2018/04/18 14:44:37.016, Cost: 31.200
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[456] INFO ****** Start: 2018/04/18 14:44:37.016, End: 2018/04/18 14:44:37.016, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[456] INFO ****** Start: 2018/04/18 14:44:37.016, End: 2018/04/18 14:44:37.031, Cost: 15.600
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[456] INFO ****** Start: 2018/04/18 14:44:37.031, End: 2018/04/18 14:44:37.031, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[456] INFO ****** Start: 2018/04/18 14:44:37.031, End: 2018/04/18 14:44:37.031, Cost: 0.000
+[456] INFO 
+[456] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : UPDATE TBLRES SET muser='ADMIN',orgid='1',resgroup='',sscode='PACK01',computermac='30:9C:23:53:BD:38',shifttypecode='DAY',mdate='20180418',reworkcode='',computername='LENOVO-PC',crewcode='',reworkroutecode='',mtime='144935',restype='ResourceType_Human',dctcode='',eattribute1='',segcode='AP',jigcontrol='N',resdesc='包装-功能测试',computerip='192.168.1.135' WHERE rescode='BZ02'
+[456] INFO ****** Start: 2018/04/18 14:44:37.047, End: 2018/04/18 14:44:37.094, Cost: 46.800
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[456] INFO ****** Start: 2018/04/18 14:44:37.094, End: 2018/04/18 14:44:37.094, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode FROM TBLRESRELEASELOG WHERE serial='0'
+[456] INFO ****** Start: 2018/04/18 14:44:37.094, End: 2018/04/18 14:44:37.094, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[456] INFO ****** Start: 2018/04/18 14:44:37.094, End: 2018/04/18 14:44:37.094, Cost: 0.000
+[456] INFO 
+[456] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : INSERT INTO TBLRESRELEASELOG(logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode) VALUES ('20180418','LILXL','BZ02','LENOVO-PC','30:9C:23:53:BD:38','0','192.168.1.135','LILXL','0','144935','','20180418','144935','0','')
+[456] INFO ****** Start: 2018/04/18 14:44:37.094, End: 2018/04/18 14:44:37.109, Cost: 15.600
+[456] INFO 
+[456] INFO ****** Open Connection
+[456] INFO ****** Start: 2018/04/18 14:44:37.109, End: 2018/04/18 14:44:40.169, Cost: 3059.600
+[456] INFO 
+[456] INFO ****** Execute SQL
+[456] INFO ****** Text : SELECT altermday,muser,maintaintime,sscode,status,alertcount,currunitqty,maxcount,maintaindate,statuschgreason,maintainuser,totalcount,maxmday,rescode,mdate,opeuser,mtime,jigcode,useflag,eattribute1,jigspeccode,usedcount,retreason,statuschgdate,statuschgtime FROM TBLJIG WHERE jigcode=''
+[456] INFO ****** Start: 2018/04/18 14:44:40.169, End: 2018/04/18 14:44:40.169, Cost: 0.000
+[456] INFO 
+[456] INFO ****** Close Connection
+[456] INFO ****** Start: 2018/04/18 14:44:40.169, End: 2018/04/18 14:44:40.169, Cost: 0.000
+[456] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[5892] INFO ****** Open Connection
+[5892] INFO ****** Start: 2018/04/18 15:49:09.051, End: 2018/04/18 15:49:12.142, Cost: 3090.800
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[5892] INFO ****** Start: 2018/04/18 15:49:12.454, End: 2018/04/18 15:49:12.579, Cost: 124.800
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[5892] INFO ****** Start: 2018/04/18 15:49:12.626, End: 2018/04/18 15:49:12.626, Cost: 0.000
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[5892] INFO ****** Start: 2018/04/18 15:49:12.657, End: 2018/04/18 15:49:12.657, Cost: 0.000
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[5892] INFO ****** Start: 2018/04/18 15:49:12.673, End: 2018/04/18 15:49:12.673, Cost: 0.000
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[5892] INFO ****** Start: 2018/04/18 15:49:12.673, End: 2018/04/18 15:49:12.688, Cost: 15.600
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[5892] INFO ****** Start: 2018/04/18 15:49:12.688, End: 2018/04/18 15:49:12.688, Cost: 0.000
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[5892] INFO ****** Start: 2018/04/18 15:49:12.688, End: 2018/04/18 15:49:12.704, Cost: 15.600
+[5892] INFO 
+[5892] INFO ****** Execute SQL
+[5892] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[5892] INFO ****** Start: 2018/04/18 15:49:12.704, End: 2018/04/18 15:49:12.704, Cost: 0.000
+[5892] INFO 
+[5892] INFO ****** Close Connection
+[5892] INFO ****** Start: 2018/04/18 15:49:12.704, End: 2018/04/18 15:49:12.704, Cost: 0.000
+[5892] INFO 
+[3156] INFO ****** Open Connection
+[3156] INFO ****** Start: 2018/04/18 15:49:17.399, End: 2018/04/18 15:49:17.415, Cost: 15.600
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[3156] INFO ****** Start: 2018/04/18 15:49:17.415, End: 2018/04/18 15:49:17.431, Cost: 15.600
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[3156] INFO ****** Start: 2018/04/18 15:49:17.431, End: 2018/04/18 15:49:17.431, Cost: 0.000
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[3156] INFO ****** Start: 2018/04/18 15:49:17.431, End: 2018/04/18 15:49:17.431, Cost: 0.000
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[3156] INFO ****** Start: 2018/04/18 15:49:17.446, End: 2018/04/18 15:49:17.446, Cost: 0.000
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[3156] INFO ****** Start: 2018/04/18 15:49:17.446, End: 2018/04/18 15:49:17.446, Cost: 0.000
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[3156] INFO ****** Start: 2018/04/18 15:49:17.446, End: 2018/04/18 15:49:17.446, Cost: 0.000
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[3156] INFO ****** Start: 2018/04/18 15:49:17.446, End: 2018/04/18 15:49:17.462, Cost: 15.600
+[3156] INFO 
+[3156] INFO ****** Execute SQL
+[3156] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[3156] INFO ****** Start: 2018/04/18 15:49:17.462, End: 2018/04/18 15:49:17.462, Cost: 0.000
+[3156] INFO 
+[3156] INFO ****** Close Connection
+[3156] INFO ****** Start: 2018/04/18 15:49:17.462, End: 2018/04/18 15:49:17.462, Cost: 0.000
+[3156] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[5468] INFO ****** Open Connection
+[5468] INFO ****** Start: 2018/04/18 15:49:29.614, End: 2018/04/18 15:49:30.301, Cost: 686.400
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.457, End: 2018/04/18 15:49:30.457, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Open Connection
+[5468] INFO ****** Start: 2018/04/18 15:49:30.472, End: 2018/04/18 15:49:30.503, Cost: 31.200
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.503, End: 2018/04/18 15:49:30.503, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.503, End: 2018/04/18 15:49:30.503, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.519, End: 2018/04/18 15:49:30.535, Cost: 15.600
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.535, End: 2018/04/18 15:49:30.535, Cost: 0.000
+[5468] INFO 
+[5468] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='155428',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180418',reworkroutecode='' WHERE rescode='BZ02'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.535, End: 2018/04/18 15:49:30.550, Cost: 15.600
+[5468] INFO 
+[5468] INFO ****** Open Connection
+[5468] INFO ****** Start: 2018/04/18 15:49:30.550, End: 2018/04/18 15:49:30.581, Cost: 31.200
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.581, End: 2018/04/18 15:49:30.581, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[5468] INFO ****** Start: 2018/04/18 15:49:30.581, End: 2018/04/18 15:49:30.581, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4927'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.581, End: 2018/04/18 15:49:30.581, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.581, End: 2018/04/18 15:49:30.581, Cost: 0.000
+[5468] INFO 
+[5468] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='30:9C:23:53:BC:86',logindate='20180418',computerip='192.168.1.121',mdate='20180418',jigcode='',releaseuser='DLL',muser='DLL',logintime='151804',mtime='155428',releasedate='20180418',releasetime='155428',rescode='BZ02',computername='LENOVO-PC',loginuser='LILXL' WHERE serial='4927'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.581, End: 2018/04/18 15:49:30.597, Cost: 15.600
+[5468] INFO 
+[5468] INFO ****** Open Connection
+[5468] INFO ****** Start: 2018/04/18 15:49:30.628, End: 2018/04/18 15:49:30.659, Cost: 31.200
+[5468] INFO 
+[5468] INFO ****** Execute SQL
+[5468] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[5468] INFO ****** Start: 2018/04/18 15:49:30.659, End: 2018/04/18 15:49:30.659, Cost: 0.000
+[5468] INFO 
+[5468] INFO ****** Close Connection
+[5468] INFO ****** Start: 2018/04/18 15:49:30.659, End: 2018/04/18 15:49:30.659, Cost: 0.000
+[5468] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[4740] INFO ****** Open Connection
+[4740] INFO ****** Start: 2018/04/18 15:49:40.347, End: 2018/04/18 15:49:40.425, Cost: 78.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[4740] INFO ****** Start: 2018/04/18 15:49:40.472, End: 2018/04/18 15:49:40.487, Cost: 15.600
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[4740] INFO ****** Start: 2018/04/18 15:49:40.487, End: 2018/04/18 15:49:40.487, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[4740] INFO ****** Start: 2018/04/18 15:49:40.487, End: 2018/04/18 15:49:40.487, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[4740] INFO ****** Start: 2018/04/18 15:49:40.487, End: 2018/04/18 15:49:40.503, Cost: 15.600
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[4740] INFO ****** Start: 2018/04/18 15:49:40.503, End: 2018/04/18 15:49:40.503, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[4740] INFO ****** Start: 2018/04/18 15:49:40.503, End: 2018/04/18 15:49:40.503, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[4740] INFO ****** Start: 2018/04/18 15:49:40.503, End: 2018/04/18 15:49:40.503, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[4740] INFO ****** Start: 2018/04/18 15:49:40.519, End: 2018/04/18 15:49:40.519, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Open Connection
+[4740] INFO ****** Start: 2018/04/18 15:49:40.924, End: 2018/04/18 15:49:43.951, Cost: 3026.400
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[4740] INFO ****** Start: 2018/04/18 15:49:43.951, End: 2018/04/18 15:49:43.966, Cost: 15.600
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[4740] INFO ****** Start: 2018/04/18 15:49:43.966, End: 2018/04/18 15:49:43.966, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[4740] INFO ****** Start: 2018/04/18 15:49:43.982, End: 2018/04/18 15:49:43.982, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[4740] INFO ****** Start: 2018/04/18 15:49:43.982, End: 2018/04/18 15:49:43.982, Cost: 0.000
+[4740] INFO 
+[4740] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : UPDATE TBLRES SET muser='ADMIN',orgid='1',resgroup='',sscode='PACK01',computermac='30:9C:23:53:BD:38',shifttypecode='DAY',mdate='20180418',reworkcode='',computername='LENOVO-PC',crewcode='',reworkroutecode='',mtime='155442',restype='ResourceType_Human',dctcode='',eattribute1='',segcode='AP',jigcontrol='N',resdesc='包装-功能测试',computerip='192.168.1.135' WHERE rescode='BZ02'
+[4740] INFO ****** Start: 2018/04/18 15:49:44.013, End: 2018/04/18 15:49:44.044, Cost: 31.200
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[4740] INFO ****** Start: 2018/04/18 15:49:44.044, End: 2018/04/18 15:49:44.060, Cost: 15.600
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode FROM TBLRESRELEASELOG WHERE serial='0'
+[4740] INFO ****** Start: 2018/04/18 15:49:44.060, End: 2018/04/18 15:49:44.060, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[4740] INFO ****** Start: 2018/04/18 15:49:44.060, End: 2018/04/18 15:49:44.075, Cost: 15.600
+[4740] INFO 
+[4740] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : INSERT INTO TBLRESRELEASELOG(logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode) VALUES ('20180418','LILXL','BZ02','LENOVO-PC','30:9C:23:53:BD:38','0','192.168.1.135','LILXL','0','155442','','20180418','155442','0','')
+[4740] INFO ****** Start: 2018/04/18 15:49:44.075, End: 2018/04/18 15:49:44.075, Cost: 0.000
+[4740] INFO 
+[4740] INFO ****** Open Connection
+[4740] INFO ****** Start: 2018/04/18 15:49:44.091, End: 2018/04/18 15:49:44.138, Cost: 46.800
+[4740] INFO 
+[4740] INFO ****** Execute SQL
+[4740] INFO ****** Text : SELECT altermday,muser,maintaintime,sscode,status,alertcount,currunitqty,maxcount,maintaindate,statuschgreason,maintainuser,totalcount,maxmday,rescode,mdate,opeuser,mtime,jigcode,useflag,eattribute1,jigspeccode,usedcount,retreason,statuschgdate,statuschgtime FROM TBLJIG WHERE jigcode=''
+[4740] INFO ****** Start: 2018/04/18 15:49:44.138, End: 2018/04/18 15:49:44.153, Cost: 15.600
+[4740] INFO 
+[4740] INFO ****** Close Connection
+[4740] INFO ****** Start: 2018/04/18 15:49:44.153, End: 2018/04/18 15:49:44.153, Cost: 0.000
+[4740] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[5896] INFO ****** Open Connection
+[5896] INFO ****** Start: 2018/04/18 15:49:55.464, End: 2018/04/18 15:49:55.558, Cost: 93.600
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[5896] INFO ****** Start: 2018/04/18 15:49:55.589, End: 2018/04/18 15:49:55.605, Cost: 15.600
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[5896] INFO ****** Start: 2018/04/18 15:49:55.605, End: 2018/04/18 15:49:55.605, Cost: 0.000
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[5896] INFO ****** Start: 2018/04/18 15:49:55.605, End: 2018/04/18 15:49:55.605, Cost: 0.000
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[5896] INFO ****** Start: 2018/04/18 15:49:55.605, End: 2018/04/18 15:49:55.620, Cost: 15.600
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[5896] INFO ****** Start: 2018/04/18 15:49:55.620, End: 2018/04/18 15:49:55.620, Cost: 0.000
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[5896] INFO ****** Start: 2018/04/18 15:49:55.620, End: 2018/04/18 15:49:55.620, Cost: 0.000
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[5896] INFO ****** Start: 2018/04/18 15:49:55.620, End: 2018/04/18 15:49:55.620, Cost: 0.000
+[5896] INFO 
+[5896] INFO ****** Execute SQL
+[5896] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[5896] INFO ****** Start: 2018/04/18 15:49:55.620, End: 2018/04/18 15:49:55.620, Cost: 0.000
+[5896] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[3108] INFO ****** Start: 2018/04/18 15:50:04.934, End: 2018/04/18 15:50:04.934, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[3108] INFO ****** Start: 2018/04/18 15:50:04.934, End: 2018/04/18 15:50:04.934, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[3108] INFO ****** Start: 2018/04/18 15:50:04.934, End: 2018/04/18 15:50:04.949, Cost: 15.600
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[3108] INFO ****** Start: 2018/04/18 15:50:04.949, End: 2018/04/18 15:50:04.949, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[3108] INFO ****** Start: 2018/04/18 15:50:04.949, End: 2018/04/18 15:50:04.949, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[3108] INFO ****** Start: 2018/04/18 15:50:04.949, End: 2018/04/18 15:50:04.965, Cost: 15.600
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[3108] INFO ****** Start: 2018/04/18 15:50:04.965, End: 2018/04/18 15:50:04.965, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[3108] INFO ****** Start: 2018/04/18 15:50:04.980, End: 2018/04/18 15:50:04.980, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Open Connection
+[3108] INFO ****** Start: 2018/04/18 15:50:05.027, End: 2018/04/18 15:50:05.074, Cost: 46.800
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.074, End: 2018/04/18 15:50:05.090, Cost: 15.600
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.090, End: 2018/04/18 15:50:05.090, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.105, End: 2018/04/18 15:50:05.105, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.105, End: 2018/04/18 15:50:05.121, Cost: 15.600
+[3108] INFO 
+[3108] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : UPDATE TBLRES SET muser='ADMIN',orgid='1',resgroup='',sscode='PACK01',computermac='30:9C:23:53:BD:38',shifttypecode='DAY',mdate='20180418',reworkcode='',computername='LENOVO-PC',crewcode='',reworkroutecode='',mtime='155503',restype='ResourceType_Human',dctcode='',eattribute1='',segcode='AP',jigcontrol='N',resdesc='包装-功能测试',computerip='192.168.1.135' WHERE rescode='BZ02'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.121, End: 2018/04/18 15:50:05.121, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.121, End: 2018/04/18 15:50:05.136, Cost: 15.600
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode FROM TBLRESRELEASELOG WHERE serial='0'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.136, End: 2018/04/18 15:50:05.136, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3108] INFO ****** Start: 2018/04/18 15:50:05.136, End: 2018/04/18 15:50:05.136, Cost: 0.000
+[3108] INFO 
+[3108] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : INSERT INTO TBLRESRELEASELOG(logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode) VALUES ('20180418','LILXL','BZ02','LENOVO-PC','30:9C:23:53:BD:38','0','192.168.1.135','LILXL','0','155503','','20180418','155503','0','')
+[3108] INFO ****** Start: 2018/04/18 15:50:05.152, End: 2018/04/18 15:50:05.152, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Open Connection
+[3108] INFO ****** Start: 2018/04/18 15:50:05.152, End: 2018/04/18 15:50:05.199, Cost: 46.800
+[3108] INFO 
+[3108] INFO ****** Execute SQL
+[3108] INFO ****** Text : SELECT altermday,muser,maintaintime,sscode,status,alertcount,currunitqty,maxcount,maintaindate,statuschgreason,maintainuser,totalcount,maxmday,rescode,mdate,opeuser,mtime,jigcode,useflag,eattribute1,jigspeccode,usedcount,retreason,statuschgdate,statuschgtime FROM TBLJIG WHERE jigcode=''
+[3108] INFO ****** Start: 2018/04/18 15:50:05.199, End: 2018/04/18 15:50:05.199, Cost: 0.000
+[3108] INFO 
+[3108] INFO ****** Close Connection
+[3108] INFO ****** Start: 2018/04/18 15:50:05.199, End: 2018/04/18 15:50:05.199, Cost: 0.000
+[3108] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[5864] INFO ****** Open Connection
+[5864] INFO ****** Start: 2018/04/18 15:51:57.337, End: 2018/04/18 15:51:57.539, Cost: 202.800
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.602, End: 2018/04/18 15:51:57.602, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.602, End: 2018/04/18 15:51:57.602, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[5864] INFO ****** Start: 2018/04/18 15:51:57.602, End: 2018/04/18 15:51:57.617, Cost: 15.600
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.617, End: 2018/04/18 15:51:57.617, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[5864] INFO ****** Start: 2018/04/18 15:51:57.617, End: 2018/04/18 15:51:57.617, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.617, End: 2018/04/18 15:51:57.617, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[5864] INFO ****** Start: 2018/04/18 15:51:57.617, End: 2018/04/18 15:51:57.617, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.617, End: 2018/04/18 15:51:57.633, Cost: 15.600
+[5864] INFO 
+[5864] INFO ****** Open Connection
+[5864] INFO ****** Start: 2018/04/18 15:51:57.695, End: 2018/04/18 15:51:57.711, Cost: 15.600
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.711, End: 2018/04/18 15:51:57.711, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.727, End: 2018/04/18 15:51:57.727, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.727, End: 2018/04/18 15:51:57.727, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.727, End: 2018/04/18 15:51:57.727, Cost: 0.000
+[5864] INFO 
+[5864] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : UPDATE TBLRES SET muser='ADMIN',orgid='1',resgroup='',sscode='PACK01',computermac='30:9C:23:53:BD:38',shifttypecode='DAY',mdate='20180418',reworkcode='',computername='LENOVO-PC',crewcode='',reworkroutecode='',mtime='155656',restype='ResourceType_Human',dctcode='',eattribute1='',segcode='AP',jigcontrol='N',resdesc='包装-功能测试',computerip='192.168.1.135' WHERE rescode='BZ02'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.742, End: 2018/04/18 15:51:57.742, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.742, End: 2018/04/18 15:51:57.742, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode FROM TBLRESRELEASELOG WHERE serial='0'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.742, End: 2018/04/18 15:51:57.742, Cost: 0.000
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5864] INFO ****** Start: 2018/04/18 15:51:57.742, End: 2018/04/18 15:51:57.742, Cost: 0.000
+[5864] INFO 
+[5864] ERROR未能找到文件“C:\Users\lenovo\Desktop\登虹(林)\DH_TEST(MAC从MES上获取)\Release\dblog.xml”。
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : INSERT INTO TBLRESRELEASELOG(logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode) VALUES ('20180418','LILXL','BZ02','LENOVO-PC','30:9C:23:53:BD:38','0','192.168.1.135','LILXL','0','155656','','20180418','155656','0','')
+[5864] INFO ****** Start: 2018/04/18 15:51:57.742, End: 2018/04/18 15:51:57.758, Cost: 15.600
+[5864] INFO 
+[5864] INFO ****** Open Connection
+[5864] INFO ****** Start: 2018/04/18 15:51:57.758, End: 2018/04/18 15:52:00.784, Cost: 3026.400
+[5864] INFO 
+[5864] INFO ****** Execute SQL
+[5864] INFO ****** Text : SELECT altermday,muser,maintaintime,sscode,status,alertcount,currunitqty,maxcount,maintaindate,statuschgreason,maintainuser,totalcount,maxmday,rescode,mdate,opeuser,mtime,jigcode,useflag,eattribute1,jigspeccode,usedcount,retreason,statuschgdate,statuschgtime FROM TBLJIG WHERE jigcode=''
+[5864] INFO ****** Start: 2018/04/18 15:52:00.784, End: 2018/04/18 15:52:00.800, Cost: 15.600
+[5864] INFO 
+[5864] INFO ****** Close Connection
+[5864] INFO ****** Start: 2018/04/18 15:52:00.800, End: 2018/04/18 15:52:00.800, Cost: 0.000
+[5864] INFO 
+[4616] INFO ****** Open Connection
+[4616] INFO ****** Start: 2018/04/18 15:54:34.625, End: 2018/04/18 15:54:34.672, Cost: 46.800
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[4616] INFO ****** Start: 2018/04/18 15:54:34.672, End: 2018/04/18 15:54:34.672, Cost: 0.000
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text : SELECT orgdesc,mdate,muser,orgid,mtime FROM TBLORG WHERE orgid='1'
+[4616] INFO ****** Start: 2018/04/18 15:54:34.687, End: 2018/04/18 15:54:34.687, Cost: 0.000
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text : select eattribute1, mtime, mdate, muser, resseq, rescode, opcode from TBLop2RES where RESCODE ='BZ02'
+[4616] INFO ****** Start: 2018/04/18 15:54:34.718, End: 2018/04/18 15:54:34.718, Cost: 0.000
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L00000013' ORDER BY MDate DESC,MTime DESC 
+[4616] INFO ****** Start: 2018/04/18 15:54:34.718, End: 2018/04/18 15:54:34.734, Cost: 15.600
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text :  select  distinct GetTSN('L00000013','') scard from dual 
+[4616] INFO ****** Start: 2018/04/18 15:54:34.734, End: 2018/04/18 15:54:34.734, Cost: 0.000
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L00000013' ORDER BY MDate DESC,MTime DESC 
+[4616] INFO ****** Start: 2018/04/18 15:54:34.750, End: 2018/04/18 15:54:34.750, Cost: 0.000
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text :  SELECT   eattribute1, id3, imei1, id2, mtime, cdate, ctime, status, serial, imei2, meid, cuser, id4, sn, mdate, netcode, id1, mocode, muser, psn, tsn, id5  FROM  Tblmo2imei  WHERE  1=1   AND   Tsn='L00000013'   ORDER  BY  MDATE DESC,MTIME DESC 
+[4616] INFO ****** Start: 2018/04/18 15:54:34.750, End: 2018/04/18 15:54:34.765, Cost: 15.600
+[4616] INFO 
+[4616] INFO ****** Execute SQL
+[4616] INFO ****** Text : select idmergerule, rcardseq, rcard, iscom, palletcode, mtime, mdate, moseq, routecode, ngtimes, rmabillcode, muser, tcard, modelcode, scardseq, scard, fromroute, itemcode, rescode, opcode, cartoncode, lotno, laction, tcardseq, mocode, eattribute2, eattribute1, ishold, fromop, actionlist, productstatus, shelfno from tblsimulation where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from TBLSIMULATION 							where RCARD = 'L00000013' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[4616] INFO ****** Start: 2018/04/18 15:54:34.765, End: 2018/04/18 15:54:34.765, Cost: 0.000
+[4616] INFO 
+[4616] INFO ****** Close Connection
+[4616] INFO ****** Start: 2018/04/18 15:54:34.781, End: 2018/04/18 15:54:34.781, Cost: 0.000
+[4616] INFO 
+[Footer]

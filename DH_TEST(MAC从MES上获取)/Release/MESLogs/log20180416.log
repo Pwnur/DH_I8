@@ -1,0 +1,268 @@
+[Header]
+[Footer]
+[Header]
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:27:08.313, End: 2018/04/16 09:27:09.063, Cost: 750.631
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.221, End: 2018/04/16 09:27:09.234, Cost: 13.095
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:27:09.242, End: 2018/04/16 09:27:09.368, Cost: 125.581
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.369, End: 2018/04/16 09:27:09.382, Cost: 12.438
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.389, End: 2018/04/16 09:27:09.403, Cost: 14.080
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.428, End: 2018/04/16 09:27:09.440, Cost: 12.118
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.450, End: 2018/04/16 09:27:09.463, Cost: 12.829
+[5280] INFO 
+[5280] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='92711',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180416',reworkroutecode='' WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.510, End: 2018/04/16 09:27:09.524, Cost: 14.366
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:27:09.525, End: 2018/04/16 09:27:09.675, Cost: 149.570
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.676, End: 2018/04/16 09:27:09.685, Cost: 8.471
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[5280] INFO ****** Start: 2018/04/16 09:27:09.710, End: 2018/04/16 09:27:09.721, Cost: 11.039
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4885'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.730, End: 2018/04/16 09:27:09.747, Cost: 17.381
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.748, End: 2018/04/16 09:27:09.762, Cost: 13.065
+[5280] INFO 
+[5280] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180416',computerip='192.168.3.100',mdate='20180416',jigcode='',releaseuser='DLL',muser='DLL',logintime='92336',mtime='92711',releasedate='20180416',releasetime='92711',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4885'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.764, End: 2018/04/16 09:27:09.784, Cost: 20.239
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:27:09.791, End: 2018/04/16 09:27:09.791, Cost: 0.000
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:27:09.791, End: 2018/04/16 09:27:09.801, Cost: 9.703
+[5280] INFO 
+[5280] INFO ****** Close Connection
+[5280] INFO ****** Start: 2018/04/16 09:27:09.803, End: 2018/04/16 09:27:09.803, Cost: 0.000
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:55:19.112, End: 2018/04/16 09:55:19.250, Cost: 138.266
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.250, End: 2018/04/16 09:55:19.266, Cost: 15.703
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:55:19.272, End: 2018/04/16 09:55:19.462, Cost: 189.996
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.463, End: 2018/04/16 09:55:19.481, Cost: 18.656
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.483, End: 2018/04/16 09:55:19.503, Cost: 19.889
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.507, End: 2018/04/16 09:55:19.527, Cost: 19.882
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.529, End: 2018/04/16 09:55:19.547, Cost: 17.611
+[5280] INFO 
+[5280] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='95521',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180416',reworkroutecode='' WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.551, End: 2018/04/16 09:55:19.571, Cost: 20.225
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:55:19.574, End: 2018/04/16 09:55:19.718, Cost: 144.027
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.719, End: 2018/04/16 09:55:19.727, Cost: 8.200
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[5280] INFO ****** Start: 2018/04/16 09:55:19.728, End: 2018/04/16 09:55:19.745, Cost: 16.727
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4888'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.748, End: 2018/04/16 09:55:19.764, Cost: 16.099
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.766, End: 2018/04/16 09:55:19.780, Cost: 14.023
+[5280] INFO 
+[5280] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180416',computerip='192.168.3.100',mdate='20180416',jigcode='',releaseuser='DLL',muser='DLL',logintime='94716',mtime='95521',releasedate='20180416',releasetime='95521',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4888'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.783, End: 2018/04/16 09:55:19.799, Cost: 15.257
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 09:55:19.801, End: 2018/04/16 09:55:19.975, Cost: 174.397
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 09:55:19.976, End: 2018/04/16 09:55:19.986, Cost: 9.747
+[5280] INFO 
+[5280] INFO ****** Close Connection
+[5280] INFO ****** Start: 2018/04/16 09:55:19.987, End: 2018/04/16 09:55:19.987, Cost: 0.000
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 10:04:34.686, End: 2018/04/16 10:04:35.017, Cost: 330.470
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 10:04:35.018, End: 2018/04/16 10:04:35.054, Cost: 36.502
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 10:04:35.059, End: 2018/04/16 10:04:35.534, Cost: 474.999
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 10:04:35.535, End: 2018/04/16 10:04:35.565, Cost: 29.273
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 10:04:35.568, End: 2018/04/16 10:04:35.627, Cost: 59.609
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 10:04:35.631, End: 2018/04/16 10:04:35.670, Cost: 38.558
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 10:04:35.672, End: 2018/04/16 10:04:35.712, Cost: 40.103
+[5280] INFO 
+[5280] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='100437',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180416',reworkroutecode='' WHERE rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 10:04:35.713, End: 2018/04/16 10:04:35.755, Cost: 42.111
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 10:04:35.756, End: 2018/04/16 10:04:36.168, Cost: 412.035
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 10:04:36.168, End: 2018/04/16 10:04:36.215, Cost: 47.124
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[5280] INFO ****** Start: 2018/04/16 10:04:36.216, End: 2018/04/16 10:04:36.258, Cost: 42.112
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4890'
+[5280] INFO ****** Start: 2018/04/16 10:04:36.259, End: 2018/04/16 10:04:36.301, Cost: 42.112
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[5280] INFO ****** Start: 2018/04/16 10:04:36.301, End: 2018/04/16 10:04:36.343, Cost: 41.413
+[5280] INFO 
+[5280] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180416',computerip='192.168.3.100',mdate='20180416',jigcode='',releaseuser='DLL',muser='DLL',logintime='100355',mtime='100438',releasedate='20180416',releasetime='100438',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4890'
+[5280] INFO ****** Start: 2018/04/16 10:04:36.344, End: 2018/04/16 10:04:36.387, Cost: 42.859
+[5280] INFO 
+[5280] INFO ****** Open Connection
+[5280] INFO ****** Start: 2018/04/16 10:04:36.390, End: 2018/04/16 10:04:36.700, Cost: 310.718
+[5280] INFO 
+[5280] INFO ****** Execute SQL
+[5280] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[5280] INFO ****** Start: 2018/04/16 10:04:36.700, End: 2018/04/16 10:04:36.730, Cost: 30.080
+[5280] INFO 
+[5280] INFO ****** Close Connection
+[5280] INFO ****** Start: 2018/04/16 10:04:36.730, End: 2018/04/16 10:04:36.730, Cost: 0.000
+[5280] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[3804] INFO ****** Open Connection
+[3804] INFO ****** Start: 2018/04/16 19:43:27.389, End: 2018/04/16 19:43:27.548, Cost: 159.270
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.671, End: 2018/04/16 19:43:27.681, Cost: 10.027
+[3804] INFO 
+[3804] INFO ****** Open Connection
+[3804] INFO ****** Start: 2018/04/16 19:43:27.689, End: 2018/04/16 19:43:27.802, Cost: 113.418
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.803, End: 2018/04/16 19:43:27.813, Cost: 9.739
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.815, End: 2018/04/16 19:43:27.832, Cost: 17.045
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.840, End: 2018/04/16 19:43:27.850, Cost: 9.763
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.854, End: 2018/04/16 19:43:27.862, Cost: 8.022
+[3804] INFO 
+[3804] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : UPDATE TBLRES SET segcode='AP',jigcontrol='N',orgid='1',muser='ADMIN',computermac='',computername='',crewcode='',resdesc='包装-功能测试',sscode='PACK01',resgroup='',mtime='194330',computerip='',restype='ResourceType_Human',shifttypecode='DAY',eattribute1='',reworkcode='',dctcode='',mdate='20180416',reworkroutecode='' WHERE rescode='BZ02'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.874, End: 2018/04/16 19:43:27.884, Cost: 10.026
+[3804] INFO 
+[3804] INFO ****** Open Connection
+[3804] INFO ****** Start: 2018/04/16 19:43:27.885, End: 2018/04/16 19:43:27.970, Cost: 84.599
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.970, End: 2018/04/16 19:43:27.976, Cost: 5.034
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : select a.*                              from  tblresreleaselog a                              where a.serial in                              (                                 select max(serial)                                 from tblresreleaselog                                 where rescode='BZ02'                                 group by rescode                             ) 
+[3804] INFO ****** Start: 2018/04/16 19:43:27.983, End: 2018/04/16 19:43:27.994, Cost: 11.023
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : SELECT computermac,logindate,computerip,mdate,releaseuser,jigcode,serial,muser,logintime,mtime,releasedate,releasetime,rescode,computername,loginuser FROM TBLRESRELEASELOG WHERE serial='4897'
+[3804] INFO ****** Start: 2018/04/16 19:43:27.996, End: 2018/04/16 19:43:28.006, Cost: 10.046
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[3804] INFO ****** Start: 2018/04/16 19:43:28.007, End: 2018/04/16 19:43:28.014, Cost: 7.124
+[3804] INFO 
+[3804] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : UPDATE TBLRESRELEASELOG SET computermac='70:85:C2:41:EE:9D',logindate='20180416',computerip='192.168.3.100',mdate='20180416',jigcode='',releaseuser='DLL',muser='DLL',logintime='175402',mtime='194330',releasedate='20180416',releasetime='194330',rescode='BZ02',computername='DESKTOP-QGID4TG',loginuser='LILXL' WHERE serial='4897'
+[3804] INFO ****** Start: 2018/04/16 19:43:28.015, End: 2018/04/16 19:43:28.024, Cost: 9.025
+[3804] INFO 
+[3804] INFO ****** Open Connection
+[3804] INFO ****** Start: 2018/04/16 19:43:28.028, End: 2018/04/16 19:43:28.132, Cost: 103.864
+[3804] INFO 
+[3804] INFO ****** Execute SQL
+[3804] INFO ****** Text : select * from tbljig where rescode='BZ02'
+[3804] INFO ****** Start: 2018/04/16 19:43:28.132, End: 2018/04/16 19:43:28.152, Cost: 20.557
+[3804] INFO 
+[3804] INFO ****** Close Connection
+[3804] INFO ****** Start: 2018/04/16 19:43:28.154, End: 2018/04/16 19:43:28.154, Cost: 0.000
+[3804] INFO 
+[Footer]

@@ -1,0 +1,14 @@
+[Header]
+[Footer]
+[Header]
+[4904] INFO ****** Open Connection
+[4904] INFO ****** Start: 2016-10-12 14:10:21.562, End: 2016-10-12 14:10:24.062, Cost: 2500.000
+[4904] INFO 
+[4904] INFO ****** Execute SQL
+[4904] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='ASDF'
+[4904] INFO ****** Start: 2016-10-12 14:10:24.281, End: 2016-10-12 14:10:24.296, Cost: 15.625
+[4904] INFO 
+[4904] INFO ****** Close Connection
+[4904] INFO ****** Start: 2016-10-12 14:10:24.296, End: 2016-10-12 14:10:24.296, Cost: 0.000
+[4904] INFO 
+[Footer]

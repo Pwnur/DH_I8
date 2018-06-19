@@ -1,0 +1,11 @@
+[Header]
+[Footer]
+[Header]
+[3880] INFO ****** Open Connection
+[3880] INFO ****** Start: 2018/03/13 15:18:36.539, End: 2018/03/13 15:18:41.011, Cost: 4472.169
+[3880] INFO 
+[3880] INFO ****** Execute SQL
+[3880] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='1111'
+[3880] INFO ****** Start: 2018/03/13 15:18:41.842, End: 2018/03/13 15:18:42.055, Cost: 213.128
+[3880] INFO 
+[Footer]

@@ -1,0 +1,28 @@
+[Header]
+[Footer]
+[Header]
+[13400] ERROROpen Connection Failure	没有可用的错误消息，结果代码: E_UNEXPECTED(0x8000FFFF)。	System.Data	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[13400] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Parameter SQL:SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='AAAA'
+[13400] INFO ****** Execute SQL
+[13400] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='AAAA'
+[13400] INFO ****** Start: 2018/01/11 09:48:02.570, End: 2018/01/11 09:48:02.616, Cost: 46.876
+[13400] INFO 
+[13400] ERROROpen Connection Failure	没有可用的错误消息，结果代码: E_UNEXPECTED(0x8000FFFF)。	System.Data	   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BenQGuru.eMES.Common.PersistBroker.AbstractSQLPersistBroker.OpenConnection()	Void .ctor(System.Data.OleDb.OleDbConnectionString, System.Data.OleDb.OleDbConnection)
+[13400] ERRORExecuteReader 要求已打开且可用的连接。连接的当前状态为已关闭。 Text SQL: select  distinct GetTSN('AAAA','') scard from dual 
+[13400] INFO ****** Execute SQL
+[13400] INFO ****** Text :  select  distinct GetTSN('AAAA','') scard from dual 
+[13400] INFO ****** Start: 2018/01/11 09:49:13.897, End: 2018/01/11 09:49:13.897, Cost: 0.000
+[13400] INFO 
+[Footer]

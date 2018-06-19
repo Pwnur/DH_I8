@@ -1,0 +1,102 @@
+[Header]
+[Footer]
+[Header]
+[6304] INFO ****** Open Connection
+[6304] INFO ****** Start: 2018/02/05 19:51:17.428, End: 2018/02/05 19:51:21.964, Cost: 4535.926
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT muser,userstat,mdate,userpwd,useremail,mtime,username,userdepart,usercode,eattribute1,usertel FROM TBLUSER WHERE usercode='150423036'
+[6304] INFO ****** Start: 2018/02/05 19:51:22.990, End: 2018/02/05 19:51:23.168, Cost: 178.156
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='T0'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.262, End: 2018/02/05 19:51:23.272, Cost: 9.592
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.308, End: 2018/02/05 19:51:23.318, Cost: 10.006
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='WS18011111'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.372, End: 2018/02/05 19:51:23.386, Cost: 14.009
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='5002A-T'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.406, End: 2018/02/05 19:51:23.419, Cost: 13.078
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT * FROM tblitem2sncheck WHERE itemCode='5002A-T'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.548, End: 2018/02/05 19:51:23.602, Cost: 54.034
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='I010000100' OR MEID='I010000100' ) 
+[6304] INFO ****** Start: 2018/02/05 19:51:23.621, End: 2018/02/05 19:51:23.643, Cost: 22.016
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text :  select  distinct GetSourceCard('I010000100','WS18011111') scard from tblonwipcardtrans   WHERE GetSourceCard('I010000100','WS18011111')=tblonwipcardtrans.scard
+[6304] INFO ****** Start: 2018/02/05 19:51:23.643, End: 2018/02/05 19:51:23.663, Cost: 20.014
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : select a.* FROM tblinstorageinfo A WHERE a.rcard='I010000100' or  a.sn='I010000100' or a.tsn='I010000100' or a.imei='I010000100' 
+[6304] INFO ****** Start: 2018/02/05 19:51:23.686, End: 2018/02/05 19:51:23.698, Cost: 11.609
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='T0'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.731, End: 2018/02/05 19:51:23.739, Cost: 8.007
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='I010000100' ORDER BY MDate DESC,MTime DESC 
+[6304] INFO ****** Start: 2018/02/05 19:51:23.741, End: 2018/02/05 19:51:23.767, Cost: 26.019
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text :  SELECT  serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1 FROM  tblMO2IMEI WHERE  1=1 AND ( IMEI2='I010000100' OR MEID='I010000100' ) 
+[6304] INFO ****** Start: 2018/02/05 19:51:23.768, End: 2018/02/05 19:51:23.775, Cost: 7.060
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text :  select  distinct GetSourceCard('I010000100','') scard from tblonwipcardtrans   WHERE GetSourceCard('I010000100','')=tblonwipcardtrans.scard
+[6304] INFO ****** Start: 2018/02/05 19:51:23.775, End: 2018/02/05 19:51:23.783, Cost: 8.164
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='I010000100' ORDER BY MDate DESC,MTime DESC 
+[6304] INFO ****** Start: 2018/02/05 19:51:23.798, End: 2018/02/05 19:51:23.809, Cost: 10.987
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='WS18011111'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.810, End: 2018/02/05 19:51:23.820, Cost: 10.401
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,lotsize,muser,itemdate,cartonweightmin,itemcontrol,itemuser,itemtype,electriccurrentmaxvalue,orgid,needchkaccessory,itemvicecartonqty,itemdesc,isfai,electriccurrentminvalue,cartonimeicheckqty,mtime,cartonweight,productcode,itemcode,mdate,psnweightmax,ischeck,ckpsnweight,psnweightmin,lotnorule,ckcartonweight,itemburninqty,pcbacount,itemcartonqty,itemver,mixcartonrule,itemconfig,istsforcelot,itemname,itemuom,checkrate,cartonweightmax,chkitemop,needchkcarton FROM TBLITEM WHERE orgid='1' AND itemcode='5002A-T'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.821, End: 2018/02/05 19:51:23.831, Cost: 10.018
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='WS18011111'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.832, End: 2018/02/05 19:51:23.845, Cost: 12.689
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : select fromop, iscom, fromroute, laction, modelcode, tcard, lotno, ngtimes, cartoncode, actionlist, routecode, rescode, moseq, tcardseq, rcard, mocode, mdate, shelfno, mtime, rcardseq, idmergerule, rmabillcode, scardseq, opcode, eattribute1, ishold, itemcode, palletcode, scard, muser, eattribute2, productstatus from TBLSIMULATION where RCARD = 'I010000100' and MOCODE = 'WS18011111' order by MDATE desc,MTIME desc
+[6304] INFO ****** Start: 2018/02/05 19:51:23.863, End: 2018/02/05 19:51:23.884, Cost: 20.729
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='WS18011111'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.933, End: 2018/02/05 19:51:23.944, Cost: 10.985
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : select muser, mdate, mocode, routetype, mtime, routecode, opbomver, eattribute1, ismroute, opbomcode from tblmo2route where 1=1 and mocode = 'WS18011111' and ismroute ='1'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.957, End: 2018/02/05 19:51:23.976, Cost: 18.988
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT eattribute1,softedition,factory,moactenddate,muser,mopendingcause,itemcode,moop,color,mopcbaver,savemacbt,cusorderno,moremark,cusname,moseq,device,modowndate,momemo,mobom,rmabillcode,moinputqty,moplanstarttime,moreleasetime,moactqty,orderseq,customeroption,isconinput,mtime,mover,moplanline,moscrapqty,modesc,motype,mocode,moplancode,mdate,eattribute4,eattribute3,eattribute2,isbompass,miuinum,orderno,itemdesc,moplanqty,orgid,moplanenddate,moimporttime,shipto,moactstartdate,userdataversion,cusitemcode,cuscode,mouser,offmoqty,platform,shipcountry,moplanendtime,moimportdate,saveimei,moplanstartdate,moreleasedate,hwid,mobiosver,eattribute6,eattribute5,mostatus,iscomparesoft,idmergerule FROM TBLMO WHERE mocode='WS18011111'
+[6304] INFO ****** Start: 2018/02/05 19:51:23.984, End: 2018/02/05 19:51:23.996, Cost: 11.988
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text :  select opseq, muser, mdate, opcontrol, opid, itemcode, idmergerule, mtime, idmergetype, routecode, opcode, eattribute1, orgid, optionalop from tblitemroute2op where itemcode = '5002A-T' and routecode = 'ZZ09' and  opseq = (select min(opseq) from tblitemroute2op where itemcode = '5002A-T' and routecode = 'ZZ09'  AND orgid IN (1) ) AND orgid IN (1) 
+[6304] INFO ****** Start: 2018/02/05 19:51:24.024, End: 2018/02/05 19:51:24.047, Cost: 23.451
+[6304] INFO 
+[6304] INFO ****** Execute SQL
+[6304] INFO ****** Text : SELECT resseq,opcode,muser,rescode,mtime,eattribute1,mdate FROM TBLOP2RES WHERE opcode='PCBINPUT' AND rescode='T0'
+[6304] INFO ****** Start: 2018/02/05 19:51:24.052, End: 2018/02/05 19:51:24.059, Cost: 7.006
+[6304] INFO 
+[6304] INFO ****** Close Connection
+[6304] INFO ****** Start: 2018/02/05 19:51:24.067, End: 2018/02/05 19:51:24.067, Cost: 0.000
+[6304] INFO 
+[Footer]

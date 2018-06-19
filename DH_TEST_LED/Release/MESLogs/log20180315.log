@@ -1,0 +1,22 @@
+[Header]
+[Footer]
+[Header]
+[8404] INFO ****** Open Connection
+[8404] INFO ****** Start: 2018/03/15 11:04:27.153, End: 2018/03/15 11:04:29.169, Cost: 2015.628
+[8404] INFO 
+[8404] INFO ****** Execute SQL
+[8404] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='1111'
+[8404] INFO ****** Start: 2018/03/15 11:04:30.153, End: 2018/03/15 11:04:30.185, Cost: 31.255
+[8404] INFO 
+[Footer]
+[Header]
+[Footer]
+[Header]
+[9104] INFO ****** Open Connection
+[9104] INFO ****** Start: 2018/03/15 13:07:44.814, End: 2018/03/15 13:07:46.346, Cost: 1531.252
+[9104] INFO 
+[9104] INFO ****** Execute SQL
+[9104] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='123456'
+[9104] INFO ****** Start: 2018/03/15 13:07:47.971, End: 2018/03/15 13:07:48.064, Cost: 93.742
+[9104] INFO 
+[Footer]

@@ -1,0 +1,305 @@
+[Header]
+[Footer]
+[Header]
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:51:19.208, End: 2018/04/17 10:51:20.982, Cost: 1773.808
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L00000000\11' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:21.214, End: 2018/04/17 10:51:21.241, Cost: 26.337
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :  select  distinct GetTSN('L00000000\11','') scard from dual 
+[11608] INFO ****** Start: 2018/04/17 10:51:21.243, End: 2018/04/17 10:51:21.262, Cost: 19.145
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L00000000\11' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:21.331, End: 2018/04/17 10:51:21.347, Cost: 16.312
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :  SELECT   serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1  FROM  Tblmo2imei  WHERE  1=1   AND   Tsn='L00000000\11'   ORDER  BY  MDATE DESC,MTIME DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:21.387, End: 2018/04/17 10:51:21.404, Cost: 16.612
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L00000000\11' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:51:21.439, End: 2018/04/17 10:51:21.465, Cost: 26.253
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:51:21.471, End: 2018/04/17 10:51:21.471, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:51:24.917, End: 2018/04/17 10:51:24.917, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L0000000011' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:24.917, End: 2018/04/17 10:51:24.937, Cost: 19.871
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :  select  distinct GetTSN('L0000000011','') scard from dual 
+[11608] INFO ****** Start: 2018/04/17 10:51:24.937, End: 2018/04/17 10:51:24.956, Cost: 19.712
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L0000000011' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:24.958, End: 2018/04/17 10:51:24.984, Cost: 25.528
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :  SELECT   serial, sn, mdate, tsn, muser, imei2, netcode, id3, id2, id1, id5, cdate, psn, mtime, imei1, meid, id4, status, cuser, mocode, ctime, eattribute1  FROM  Tblmo2imei  WHERE  1=1   AND   Tsn='L0000000011'   ORDER  BY  MDATE DESC,MTIME DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:24.985, End: 2018/04/17 10:51:25.005, Cost: 20.413
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L0000000011' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:51:25.006, End: 2018/04/17 10:51:25.024, Cost: 17.392
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:51:25.025, End: 2018/04/17 10:51:25.025, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:51:34.831, End: 2018/04/17 10:51:34.831, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000011' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:51:34.831, End: 2018/04/17 10:51:34.850, Cost: 18.362
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L000000011' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:51:34.853, End: 2018/04/17 10:51:34.864, Cost: 11.231
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND sn='L000000011' AND mocode='LXL_T001'
+[11608] INFO ****** Start: 2018/04/17 10:51:34.866, End: 2018/04/17 10:51:34.875, Cost: 9.192
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND  mocode='LXL_T001'AND status='NEW' AND  ROWNUM  <500  order by serial,cdate,ctime
+[11608] INFO ****** Start: 2018/04/17 10:51:34.877, End: 2018/04/17 10:51:34.887, Cost: 10.291
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[11608] INFO ****** Start: 2018/04/17 10:51:34.894, End: 2018/04/17 10:51:34.904, Cost: 9.300
+[11608] INFO 
+[11608] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : UPDATE TBLMO2MACBT SET ctime='104456',code3='',code2='',mdate='20180417',mocode='LXL_T001',cuser='SYSTEM',mtime='105137',mac='10000016',cdate='20180417',bt='20000016',sn='L000000011',status='APPOINTMENT',muser='DLL',eattribute1='BS',code1='' WHERE serial='131797'
+[11608] INFO ****** Start: 2018/04/17 10:51:34.915, End: 2018/04/17 10:51:34.930, Cost: 15.213
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:51:34.930, End: 2018/04/17 10:51:34.930, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:05.431, End: 2018/04/17 10:52:05.431, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000012' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:52:05.431, End: 2018/04/17 10:52:05.445, Cost: 13.380
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L000000012' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:52:05.446, End: 2018/04/17 10:52:05.458, Cost: 12.240
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND sn='L000000012' AND mocode='LXL_T001'
+[11608] INFO ****** Start: 2018/04/17 10:52:05.459, End: 2018/04/17 10:52:05.468, Cost: 9.509
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND  mocode='LXL_T001'AND status='NEW' AND  ROWNUM  <500  order by serial,cdate,ctime
+[11608] INFO ****** Start: 2018/04/17 10:52:05.469, End: 2018/04/17 10:52:05.481, Cost: 11.394
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[11608] INFO ****** Start: 2018/04/17 10:52:05.500, End: 2018/04/17 10:52:05.508, Cost: 8.182
+[11608] INFO 
+[11608] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : UPDATE TBLMO2MACBT SET ctime='104456',code3='',code2='',mdate='20180417',mocode='LXL_T001',cuser='SYSTEM',mtime='105208',mac='10000014',cdate='20180417',bt='20000014',sn='L000000012',status='APPOINTMENT',muser='DLL',eattribute1='BS',code1='' WHERE serial='131795'
+[11608] INFO ****** Start: 2018/04/17 10:52:05.511, End: 2018/04/17 10:52:05.521, Cost: 10.032
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:05.522, End: 2018/04/17 10:52:05.522, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:10.047, End: 2018/04/17 10:52:10.047, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000013' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:52:10.047, End: 2018/04/17 10:52:10.066, Cost: 18.586
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L000000013' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:52:10.067, End: 2018/04/17 10:52:10.091, Cost: 23.622
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND sn='L000000013' AND mocode='LXL_T001'
+[11608] INFO ****** Start: 2018/04/17 10:52:10.092, End: 2018/04/17 10:52:10.112, Cost: 20.864
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND  mocode='LXL_T001'AND status='NEW' AND  ROWNUM  <500  order by serial,cdate,ctime
+[11608] INFO ****** Start: 2018/04/17 10:52:10.113, End: 2018/04/17 10:52:10.138, Cost: 24.138
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[11608] INFO ****** Start: 2018/04/17 10:52:10.156, End: 2018/04/17 10:52:10.181, Cost: 25.501
+[11608] INFO 
+[11608] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : UPDATE TBLMO2MACBT SET ctime='104456',code3='',code2='',mdate='20180417',mocode='LXL_T001',cuser='SYSTEM',mtime='105213',mac='10000012',cdate='20180417',bt='20000012',sn='L000000013',status='APPOINTMENT',muser='DLL',eattribute1='BS',code1='' WHERE serial='131793'
+[11608] INFO ****** Start: 2018/04/17 10:52:10.209, End: 2018/04/17 10:52:10.223, Cost: 14.303
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:10.224, End: 2018/04/17 10:52:10.224, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:14.456, End: 2018/04/17 10:52:14.456, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000015' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:52:14.456, End: 2018/04/17 10:52:14.472, Cost: 16.236
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L000000015' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:52:14.473, End: 2018/04/17 10:52:14.501, Cost: 28.302
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND sn='L000000015' AND mocode='LXL_T001'
+[11608] INFO ****** Start: 2018/04/17 10:52:14.502, End: 2018/04/17 10:52:14.520, Cost: 17.318
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND  mocode='LXL_T001'AND status='NEW' AND  ROWNUM  <500  order by serial,cdate,ctime
+[11608] INFO ****** Start: 2018/04/17 10:52:14.521, End: 2018/04/17 10:52:14.536, Cost: 15.496
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[11608] INFO ****** Start: 2018/04/17 10:52:14.554, End: 2018/04/17 10:52:14.565, Cost: 11.267
+[11608] INFO 
+[11608] ERROR未能找到文件“F:\工厂\4楼软件\mes客户端\20170412\Release\DLL\dblog.xml”。
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : UPDATE TBLMO2MACBT SET ctime='104456',code3='',code2='',mdate='20180417',mocode='LXL_T001',cuser='SYSTEM',mtime='105217',mac='10000002',cdate='20180417',bt='20000002',sn='L000000015',status='APPOINTMENT',muser='DLL',eattribute1='BS',code1='' WHERE serial='131783'
+[11608] INFO ****** Start: 2018/04/17 10:52:14.568, End: 2018/04/17 10:52:14.583, Cost: 14.208
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:14.584, End: 2018/04/17 10:52:14.584, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:40.963, End: 2018/04/17 10:52:40.964, Cost: 1.007
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000015' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 10:52:40.964, End: 2018/04/17 10:52:40.975, Cost: 10.306
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L000000015' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 10:52:40.976, End: 2018/04/17 10:52:40.985, Cost: 9.222
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND sn='L000000015' AND mocode='LXL_T001'
+[11608] INFO ****** Start: 2018/04/17 10:52:40.986, End: 2018/04/17 10:52:40.994, Cost: 8.332
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 10:52:40.995, End: 2018/04/17 10:52:40.995, Cost: 0.000
+[11608] INFO 
+[11608] INFO ****** Open Connection
+[11608] INFO ****** Start: 2018/04/17 11:09:11.896, End: 2018/04/17 11:09:11.994, Cost: 98.558
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : SELECT * FROM tblSimulationReport WHERE RCard='L000000011' ORDER BY MDate DESC,MTime DESC 
+[11608] INFO ****** Start: 2018/04/17 11:09:11.995, End: 2018/04/17 11:09:12.007, Cost: 11.119
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text : select eattribute1, tpcode, muser, status, rmabillcode, laction, tcardseq, sscode, rcardseq, modelcode, scardseq, idmergerule, iscom, shelfno, shiftday, shifttypecode, ngtimes, tcard, isloadedpart, mtime, shiftcode, cartoncode, itemcode, loadedrcard, mdate, rescode, moseq, routecode, palletcode, opcode, rcard, segcode, scard, mocode, lotno, eattribute2 from tblsimulationreport where 					(rcard,mocode) in ( 					select rcard, mocode 					from (select rcard, mocode 							from tblsimulationreport 							where RCARD = 'L000000011' 							order by MDATE desc, MTIME desc) 							where rownum = 1)
+[11608] INFO ****** Start: 2018/04/17 11:09:12.011, End: 2018/04/17 11:09:12.025, Cost: 14.121
+[11608] INFO 
+[11608] INFO ****** Execute SQL
+[11608] INFO ****** Text :   SELECT   ctime, code3, code2, mdate, mocode, cuser, mtime, serial, mac, cdate, bt, sn, status, muser, eattribute1, code1 FROM  tblMO2MacBT    WHERE  1=1 AND sn='L000000011' AND mocode='LXL_T001'
+[11608] INFO ****** Start: 2018/04/17 11:09:12.029, End: 2018/04/17 11:09:12.037, Cost: 8.103
+[11608] INFO 
+[11608] INFO ****** Close Connection
+[11608] INFO ****** Start: 2018/04/17 11:09:12.039, End: 2018/04/17 11:09:12.039, Cost: 0.000
+[11608] INFO 
+[Header]
+[Footer]
+[Header]
+[7176] INFO ****** Open Connection
+[7176] INFO ****** Start: 2018/04/17 15:40:55.523, End: 2018/04/17 15:40:55.758, Cost: 235.537
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[7176] INFO ****** Start: 2018/04/17 15:40:55.836, End: 2018/04/17 15:40:55.847, Cost: 11.818
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT userstat,userpwd,muser,mtime,username,usertel,useremail,userdepart,mdate,eattribute1,usercode FROM TBLUSER WHERE usercode='LILXL'
+[7176] INFO ****** Start: 2018/04/17 15:40:55.851, End: 2018/04/17 15:40:55.860, Cost: 8.230
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[7176] INFO ****** Start: 2018/04/17 15:40:55.867, End: 2018/04/17 15:40:55.874, Cost: 7.199
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[7176] INFO ****** Start: 2018/04/17 15:40:55.877, End: 2018/04/17 15:40:55.887, Cost: 10.187
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select mdate, mtime, muser, usergroupdesc, eattribute1, usergrouptype, usergroupcode from TBLUSERGROUP where USERGROUPCODE in ( select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL')
+[7176] INFO ****** Start: 2018/04/17 15:40:55.890, End: 2018/04/17 15:40:55.898, Cost: 7.395
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select count(*) from TBLUSERGROUP2USER where USERGROUPCODE='ADMIN' and  USERCODE='LILXL'
+[7176] INFO ****** Start: 2018/04/17 15:40:55.899, End: 2018/04/17 15:40:55.906, Cost: 7.025
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select count(*) from TBLUSERGROUP2RES where USERGROUPCODE in (select USERGROUPCODE from TBLUSERGROUP2USER where USERCODE='LILXL') and RESCODE='BZ02' 
+[7176] INFO ****** Start: 2018/04/17 15:40:55.906, End: 2018/04/17 15:40:55.913, Cost: 7.254
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT paramalias,issys,paramvalue,mtime,muser,paramgroupcode,eattribute1,paramcode,parentparam,isactive,mdate,paramdesc FROM TBLSYSPARAM WHERE paramgroupcode='RESBINDINGFLAG' AND paramcode='RESBINDINGFLAG'
+[7176] INFO ****** Start: 2018/04/17 15:40:55.914, End: 2018/04/17 15:40:55.923, Cost: 9.218
+[7176] INFO 
+[7176] INFO ****** Open Connection
+[7176] INFO ****** Start: 2018/04/17 15:40:56.033, End: 2018/04/17 15:40:56.153, Cost: 120.007
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.154, End: 2018/04/17 15:40:56.166, Cost: 11.596
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.177, End: 2018/04/17 15:40:56.188, Cost: 11.187
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT muser,orgid,resgroup,sscode,computermac,shifttypecode,mdate,reworkcode,computername,rescode,crewcode,reworkroutecode,mtime,restype,dctcode,eattribute1,segcode,jigcontrol,resdesc,computerip FROM TBLRES WHERE rescode='BZ02'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.202, End: 2018/04/17 15:40:56.211, Cost: 9.219
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.214, End: 2018/04/17 15:40:56.223, Cost: 8.315
+[7176] INFO 
+[7176] ERROR未能找到文件“F:\工厂\登虹\登虹\DH_TEST_LED\Release\dblog.xml”。
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : UPDATE TBLRES SET muser='ADMIN',orgid='1',resgroup='',sscode='PACK01',computermac='70:85:C2:41:EE:9D',shifttypecode='DAY',mdate='20180417',reworkcode='',computername='DESKTOP-QGID4TG',crewcode='',reworkroutecode='',mtime='154056',restype='ResourceType_Human',dctcode='',eattribute1='',segcode='AP',jigcontrol='N',resdesc='包装-功能测试',computerip='192.168.3.100' WHERE rescode='BZ02'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.234, End: 2018/04/17 15:40:56.243, Cost: 9.254
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.244, End: 2018/04/17 15:40:56.250, Cost: 6.203
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode FROM TBLRESRELEASELOG WHERE serial='0'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.255, End: 2018/04/17 15:40:56.263, Cost: 8.142
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : select to_char(sysdate,'yyyymmdd') as dbdate,to_char(sysdate,'hh24miss')  as dbtime from dual where '1' = '1'
+[7176] INFO ****** Start: 2018/04/17 15:40:56.264, End: 2018/04/17 15:40:56.272, Cost: 7.204
+[7176] INFO 
+[7176] ERROR未能找到文件“F:\工厂\登虹\登虹\DH_TEST_LED\Release\dblog.xml”。
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : INSERT INTO TBLRESRELEASELOG(logindate,loginuser,rescode,computername,computermac,releasetime,computerip,muser,releasedate,mtime,releaseuser,mdate,logintime,serial,jigcode) VALUES ('20180417','LILXL','BZ02','DESKTOP-QGID4TG','70:85:C2:41:EE:9D','0','192.168.3.100','LILXL','0','154057','','20180417','154057','0','')
+[7176] INFO ****** Start: 2018/04/17 15:40:56.275, End: 2018/04/17 15:40:56.282, Cost: 7.100
+[7176] INFO 
+[7176] INFO ****** Open Connection
+[7176] INFO ****** Start: 2018/04/17 15:40:56.287, End: 2018/04/17 15:40:56.433, Cost: 146.164
+[7176] INFO 
+[7176] INFO ****** Execute SQL
+[7176] INFO ****** Text : SELECT altermday,muser,maintaintime,sscode,status,alertcount,currunitqty,maxcount,maintaindate,statuschgreason,maintainuser,totalcount,maxmday,rescode,mdate,opeuser,mtime,jigcode,useflag,eattribute1,jigspeccode,usedcount,retreason,statuschgdate,statuschgtime FROM TBLJIG WHERE jigcode=''
+[7176] INFO ****** Start: 2018/04/17 15:40:56.433, End: 2018/04/17 15:40:56.450, Cost: 17.248
+[7176] INFO 
+[7176] INFO ****** Close Connection
+[7176] INFO ****** Start: 2018/04/17 15:40:56.452, End: 2018/04/17 15:40:56.452, Cost: 0.000
+[7176] INFO 
+[Footer]

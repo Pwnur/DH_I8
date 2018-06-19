@@ -1,0 +1,26 @@
+[Header]
+[Footer]
+[Header]
+[8972] INFO ****** Open Connection
+[8972] INFO ****** Start: 2018/04/12 09:12:17.610, End: 2018/04/12 09:12:18.331, Cost: 721.368
+[8972] INFO 
+[8972] INFO ****** Execute SQL
+[8972] INFO ****** Text : SELECT segcode,jigcontrol,orgid,muser,computermac,computername,crewcode,rescode,resdesc,sscode,resgroup,mtime,computerip,restype,shifttypecode,eattribute1,reworkcode,dctcode,mdate,reworkroutecode FROM TBLRES WHERE rescode='BZ02'
+[8972] INFO ****** Start: 2018/04/12 09:12:18.578, End: 2018/04/12 09:12:18.594, Cost: 16.140
+[8972] INFO 
+[8972] INFO ****** Execute SQL
+[8972] INFO ****** Text : SELECT muser,orgdesc,orgid,mtime,mdate FROM TBLORG WHERE orgid='1'
+[8972] INFO ****** Start: 2018/04/12 09:12:18.634, End: 2018/04/12 09:12:18.642, Cost: 7.361
+[8972] INFO 
+[8972] INFO ****** Execute SQL
+[8972] INFO ****** Text : SELECT paramcode,muser,mdate,isactive,paramdesc,issys,mtime,paramgroupcode,paramalias,paramvalue,eattribute1,parentparam FROM TBLSYSPARAM WHERE paramcode='FIXEDERRORCODE' AND paramgroupcode='DLL'
+[8972] INFO ****** Start: 2018/04/12 09:12:18.655, End: 2018/04/12 09:12:18.664, Cost: 9.185
+[8972] INFO 
+[8972] INFO ****** Execute SQL
+[8972] INFO ****** Text : SELECT muser,ntf,mdate,ecode,mtime,eattribute1,ecdesc,isntf FROM TBLEC WHERE ecode='HDLL'
+[8972] INFO ****** Start: 2018/04/12 09:12:18.696, End: 2018/04/12 09:12:18.704, Cost: 8.020
+[8972] INFO 
+[8972] INFO ****** Close Connection
+[8972] INFO ****** Start: 2018/04/12 09:12:18.709, End: 2018/04/12 09:12:18.709, Cost: 0.000
+[8972] INFO 
+[Footer]
